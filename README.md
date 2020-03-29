@@ -5,8 +5,14 @@
 
 ---
 
-### Open X-SwiftFormat
+### 1) Open X-SwiftFormat
 
 **X-SwiftFormat** works as Xcode Extension to format your swift code. You will need to open this once to activate it 👍
 
 ![](./assets/xsf_running.png)
+
+### 2) Enable X-SwiftFormat
+
+Open **System Preferences** ▸ **Extensions** ▸ **Xcode Source Editor** and make sure **X-SwiftFormat** is selected ✅
+
+![](./assets/xsf_extensions.png)
