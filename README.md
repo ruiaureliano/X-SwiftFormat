@@ -29,7 +29,7 @@ Open Xcode and use the **Format Source Code** command in Xcode's **Editor** menu
 
 ### 4) Add X-SwiftFormat Shortcut
 
-Ppen **System Preferences**, click on **Keyboard**, and switch to the **Shortcuts** tab. Select **App Shortcuts**, then hit the <kbd>+</kbd> button. Select **Xcode**, enter `Format Swift Code` and set your **Shortcut**.👏
+Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts** tab. Select **App Shortcuts**, then hit the <kbd>+</kbd> button. Select **Xcode**, enter `Format Swift Code` and set your **Shortcut**.👏
 
 ![](./assets/xsf_shortcuts.png)
 
