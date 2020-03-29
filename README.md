@@ -37,6 +37,57 @@ Ppen **System Preferences**, click on **Keyboard**, and switch to the **Shortcut
 
 # Installing [Apple Swift Format](https://github.com/apple/swift-format) (XCode or Mint)
 
+## a) Using XCode
+if you are using **Xcode 11.0 (Swift 5.1)**, you can check out and build swift-format using the following commands:
+
+```
+git clone -b swift-5.1-branch https://github.com/apple/swift-format.git
+cd swift-format
+swift build
+```
+You should see this
+```
+[207/207] Linking swift-format
+```
+👍👍👍
+
+## b) Using Mint 
+
+If you dint have **Homebrew**, install [here](https://brew.sh)
+
+```
+brew install mint
+mint install apple/swift-format@swift-5.1-branch
+```
+You should see this
+```
+🌱 Cloning swift-format swift-5.1-branch
+🌱 Resolving package
+🌱 Building package
+🌱 Installed swift-format swift-5.1-branch
+🌱 Linked swift-format swift-5.1-branch to /usr/local/bin
+```
+👍👍👍
+
+## 3) ## Command Line Usage
+
+```
+swift-format -v
+0.0.1
+```
+
+### 3.1) Some usages
+
+|Command | Description |
+|-|-|
+|`swift-format swift`|Display formatted code|
+|`swift-format -i file.swift`|Overwrites formatted code|
+|`swift-format -r folder`|Format all files in a folder|
+|`swift-format -r -i folder`|Format all files in a folder and overwrites|
+
+---
+
+Check more info here: [https://github.com/apple/swift-format](https://github.com/apple/swift-format)
 
 
 
