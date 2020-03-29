@@ -11,11 +11,11 @@
 
 ![](./assets/xsf_running.png)
 
-a) You case use the **Preview** to see the format running in the app 🦾
+**a)** You case use the **Preview** to see the format running in the app 🦾
 
 ![](./assets/xsf_format.gif)
 
-b) You can export a configuration file (`.swift-format`) to use later 🖥
+**b)** You can export a configuration file (`.swift-format`) to use later 🖥
 
 ### 2) Enable X-SwiftFormat
 
@@ -88,3 +88,19 @@ swift-format -v
 ---
 
 Check more info here: [https://github.com/apple/swift-format](https://github.com/apple/swift-format)
+
+-- 
+
+I'm [Rui Aureliano](http://ruiaureliano.com), iOS and macOS Enginer at [Olá Brothers](https://theolabrothers.com). We make [Sip](https://sipapp.io) 🤓
+
+> [Linkedin](https://www.linkedin.com/in/ruiaureliano)
+
+> [AngelList](https://angel.co/ruiaureliano)
+
+> [Twitter](https://twitter.com/ruiaureliano)
+
+> [Github](https://github.com/ruiaureliano)
+
+> [Medium](https://medium.com/@ruiaureliano)
+
+> [Stackoverflow](https://stackoverflow.com/users/881095/ruiaureliano)
