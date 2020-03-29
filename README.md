@@ -11,6 +11,10 @@
 
 ![](./assets/xsf_running.png)
 
+You case use the **Preview**
+
+![](./assets/xsf_format.gif)
+
 ### 2) Enable X-SwiftFormat
 
 Open **System Preferences** ▸ **Extensions** ▸ **Xcode Source Editor** and make sure **X-SwiftFormat** is selected ✅
@@ -22,10 +26,6 @@ Open **System Preferences** ▸ **Extensions** ▸ **Xcode Source Editor** and m
 Open Xcode and use the **Format Source Code** command in Xcode's **Editor** menu 🚀
 
 ![](./assets/xsf_usage.png)
-
-You case use the **Preview**
-
-![](./assets/xsf_format.gif)
 
 ### 4) Add X-SwiftFormat Shortcut
 
