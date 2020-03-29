@@ -16,3 +16,9 @@
 Open **System Preferences** ▸ **Extensions** ▸ **Xcode Source Editor** and make sure **X-SwiftFormat** is selected ✅
 
 ![](./assets/xsf_extensions.png)
+
+### 2) Use X-SwiftFormat
+
+Open Xcode and use the **Format Source Code** command in Xcode's **Editor** menu 🚀
+
+![](./assets/xsf_usage.png)
