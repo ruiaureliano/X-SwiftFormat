@@ -17,8 +17,14 @@ Open **System Preferences** ▸ **Extensions** ▸ **Xcode Source Editor** and m
 
 ![](./assets/xsf_extensions.png)
 
-### 2) Use X-SwiftFormat
+### 3) Use X-SwiftFormat
 
 Open Xcode and use the **Format Source Code** command in Xcode's **Editor** menu 🚀
 
 ![](./assets/xsf_usage.png)
+
+### 4) Add X-SwiftFormat Shortcut
+
+To define a keyboard shortcut, open *System Preferences*, click on *Keyboard*, and switch to the *Shortcuts* tab. In the list on the left, select *App Shortcuts*, then hit the <kbd>+</kbd> button. Select Xcode, enter `Format Swift Code`.👏
+
+![](./assets/xsf_shortcuts.png)
