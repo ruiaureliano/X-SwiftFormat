@@ -11,9 +11,11 @@
 
 ![](./assets/xsf_running.png)
 
-You case use the **Preview** to see the format running in the app 🦾
+a) You case use the **Preview** to see the format running in the app 🦾
 
 ![](./assets/xsf_format.gif)
+
+b) You can export a configuration file (`.swift-format`) to use later 🖥
 
 ### 2) Enable X-SwiftFormat
 
