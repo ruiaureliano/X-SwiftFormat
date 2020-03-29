@@ -69,14 +69,12 @@ You should see this
 ```
 👍👍👍
 
-## 3) ## Command Line Usage
+### Command Line Usage
 
 ```
 swift-format -v
 0.0.1
 ```
-
-### 3.1) Some usages
 
 |Command | Description |
 |-|-|
@@ -88,6 +86,3 @@ swift-format -v
 ---
 
 Check more info here: [https://github.com/apple/swift-format](https://github.com/apple/swift-format)
-
-
-
