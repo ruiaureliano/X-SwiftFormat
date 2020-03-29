@@ -85,11 +85,9 @@ swift-format -v
 |`swift-format -r folder`|Format all files in a folder|
 |`swift-format -r -i folder`|Format all files in a folder and overwrites|
 
----
-
 Check more info here: [https://github.com/apple/swift-format](https://github.com/apple/swift-format)
 
--- 
+---
 
 I'm [Rui Aureliano](http://ruiaureliano.com), iOS and macOS Enginer at [Olá Brothers](https://theolabrothers.com). We make [Sip](https://sipapp.io) 🤓
 
