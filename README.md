@@ -11,7 +11,7 @@
 
 ![](./assets/xsf_running.png)
 
-You case use the **Preview**
+You case use the **Preview** to see the format running in the app 🦾
 
 ![](./assets/xsf_format.gif)
 
