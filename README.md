@@ -32,3 +32,11 @@ Open Xcode and use the **Format Source Code** command in Xcode's **Editor** menu
 Ppen **System Preferences**, click on **Keyboard**, and switch to the **Shortcuts** tab. Select **App Shortcuts**, then hit the <kbd>+</kbd> button. Select **Xcode**, enter `Format Swift Code` and set your **Shortcut**.👏
 
 ![](./assets/xsf_shortcuts.png)
+
+---
+
+# Installing [Apple Swift Format](https://github.com/apple/swift-format) (XCode or Mint)
+
+
+
+
