@@ -1,7 +1,7 @@
 # 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](https://raw.githubusercontent.com/ruiaureliano/X-SwiftFormat/master/LICENSE) ![](https://img.shields.io/badge/swift-5.1-eb3d33.svg)
 ![](./assets/xsf_header.png)
 
-### 🔗 Download [X-SwiftFormat 0.9.1 βeta](https://github.com/ruiaureliano/X-SwiftFormat/releases/latest)
+### 🔗 Download [X-SwiftFormat 0.9.1 βeta](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/β91/x-swiftformat_0.9.1_91.zip)
 
 ---
 
