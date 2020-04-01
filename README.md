@@ -27,7 +27,7 @@ Open **System Preferences** ▸ **Extensions** ▸ **Xcode Source Editor** and m
 
 ### 3) Use X-SwiftFormat
 
-Open Xcode and use the **Format Source Code** command in Xcode's **Editor** menu 🚀
+Open Xcode and use the **Format Swift Code** command in Xcode's **Editor** menu 🚀
 
 ![](./assets/xsf_usage.png)
 
