@@ -37,6 +37,8 @@ Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts
 
 ![](./assets/xsf_shortcuts.png)
 
+![](./assets/xsf_shortcut_set.png)
+
 ---
 
 # Installing [Apple Swift Format](https://github.com/apple/swift-format) (XCode or Mint)
