@@ -3,6 +3,7 @@
 ![](./assets/xsf_header.png)
 
 ### 🔗 Download [X-SwiftFormat 0.9.2 (β92)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/β92/x-swiftformat_0.9.2_92.zip)
+### 💡 Check [Documentation](https://github.com/ruiaureliano/X-SwiftFormat/blob/master/DOCS.md)
 
 ---
 
