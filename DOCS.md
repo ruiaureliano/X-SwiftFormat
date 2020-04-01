@@ -27,7 +27,7 @@ X-SwiftFormat is a Xcode Plugin built on top of two cool frameworks:
 
 ![](./docs/3.png)
 
-**4)** I will just change tow options here, `Line Length = 120` and use `Tabs = 1`. We have more options to change.
+**4)** I will just change two options here, `Line Length = 120` and use `Tabs = 1`. We have more options to change.
 
 ![](./docs/4.png)
 
