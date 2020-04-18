@@ -2,7 +2,7 @@
 
 ![](./assets/xsf_header.png)
 
-### 🔗 Download [X-SwiftFormat 0.9.4 (β94)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/β94/x-swiftformat_0.9.4_94.zip)
+### 🔗 Download [X-SwiftFormat 0.9.5 (β95)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/β95/x-swiftformat_0.9.5_95.zip)
 
 X-SwiftFormat is a Xcode Plugin built on top of two cool frameworks:
 

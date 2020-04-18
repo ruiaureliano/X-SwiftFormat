@@ -1,9 +1,7 @@
 # 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](https://raw.githubusercontent.com/ruiaureliano/X-SwiftFormat/master/LICENSE) ![](https://img.shields.io/badge/swift-5.2-eb3d33.svg)
-
 ![](./assets/xsf_header.png)
 
-### 🔗 Download [X-SwiftFormat 0.9.4 (β94)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/β94/x-swiftformat_0.9.4_94.zip)
-### 💡 Check [Documentation](https://github.com/ruiaureliano/X-SwiftFormat/blob/master/DOCS.md)
+### 🔗 Download [X-SwiftFormat 0.9.5 (β95)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/β95/x-swiftformat_0.9.5_95.zip)
 
 ---
 
@@ -37,14 +35,12 @@ Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts
 
 ![](./assets/xsf_shortcuts.png)
 
-![](./assets/xsf_shortcut_set.png)
-
 ---
 
 # Installing [Apple Swift Format](https://github.com/apple/swift-format) (XCode or Mint)
 
 ## a) Using XCode
-if you are using **Xcode 11.0**, you can check out and build swift-format using the following commands:
+if you are using **Xcode 11.4 (Swift 5.2)**, you can check out and build swift-format using the following commands:
 
 ```
 git clone -b swift-5.2-branch https://github.com/apple/swift-format.git
