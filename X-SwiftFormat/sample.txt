@@ -1,0 +1,27 @@
+//
+//  Created by Rui Aureliano on 31/03/2020.
+//  Copyright © 2020 Rui Aureliano. All rights reserved.
+//
+
+import Foundation
+
+class Person{
+
+  var name:String?
+  var age:Int?
+  var cars:[String]=[]
+
+  init(name:String,age:Int,cars:[String]?=nil){
+    self.name=name
+    self.age=age
+    if let cars=cars {
+      self.cars=cars
+    }
+  }
+
+  func sorted()->[String]{
+    return cars.sorted {(car1,car2)->Bool in
+      return car1>car1
+    }
+  }
+}

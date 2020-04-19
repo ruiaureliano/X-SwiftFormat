@@ -1,0 +1,12 @@
+disabled_rules:
+- identifier_name
+- type_name
+- line_length
+
+line_length:
+- 200 # warning
+- 400 # error
+
+cyclomatic_complexity:
+- 15 # warning
+- 30 # error
