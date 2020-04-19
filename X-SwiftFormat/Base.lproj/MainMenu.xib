@@ -1017,18 +1017,18 @@
                                     </tabViewItem>
                                     <tabViewItem label="Rules" identifier="" id="u5w-hJ-eSi" userLabel="RULES TAB">
                                         <view key="view" id="YSO-aT-j2R" userLabel="VIEW">
-                                            <rect key="frame" x="10" y="33" width="443" height="311"/>
+                                            <rect key="frame" x="10" y="33" width="443" height="289"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="28" horizontalPageScroll="10" verticalLineScroll="28" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-J3-b6I" userLabel="SCROLL VIEW">
-                                                    <rect key="frame" x="0.0" y="0.0" width="443" height="311"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="443" height="289"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="rl6-iC-la9" userLabel="CLIP VIEW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="443" height="311"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    <clipView key="contentView" drawsBackground="NO" id="rl6-iC-la9" userLabel="CLIP VIEW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="443" height="289"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="28" viewBased="YES" id="EVZ-10-MNs" userLabel="TABLE VIEW" customClass="TabRulesView" customModule="X_SwiftFormat" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="443" height="311"/>
+                                                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="28" viewBased="YES" id="EVZ-10-MNs" userLabel="TABLE VIEW" customClass="TabRulesView" customModule="X_SwiftFormat" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="443" height="289"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
@@ -1076,6 +1076,9 @@
                                                                         </prototypeCellViews>
                                                                     </tableColumn>
                                                                 </tableColumns>
+                                                                <connections>
+                                                                    <outlet property="exportButton" destination="rat-gW-Vve" id="rWn-H3-De7"/>
+                                                                </connections>
                                                             </tableView>
                                                         </subviews>
                                                         <nil key="backgroundColor"/>
@@ -1162,7 +1165,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Rc1-37-xbz" userLabel="CLIP">
                                     <rect key="frame" x="0.0" y="0.0" width="560" height="390"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="ktQ-Zf-BsB" userLabel="TEXTVIEW" customClass="PreviewEditor" customModule="X_SwiftFormat" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="390"/>

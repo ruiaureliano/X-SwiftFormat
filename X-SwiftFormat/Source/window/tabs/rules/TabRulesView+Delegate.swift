@@ -39,5 +39,6 @@ extension TabRulesView: TabRulesViewCellDelegate {
 			self.sharedRules.removeValue(forKey: key)
 		}
 		_ = UserDefaults.saveRules(rules: sharedRules)
+		self.exportButton.isEnabled = (sharedRules.count > 0)
 	}
 }

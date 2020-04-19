@@ -54,6 +54,8 @@
 		B2C13D8C243387C1007A41C0 /* PreviewEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C13D8B243387C1007A41C0 /* PreviewEditor.swift */; };
 		B2ECF6CC24328B5B00BC8466 /* TabConfigurationView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECF6CB24328B5B00BC8466 /* TabConfigurationView+Delegate.swift */; };
 		B2ECF6CE24328ECA00BC8466 /* TabRulesView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECF6CD24328ECA00BC8466 /* TabRulesView+Delegate.swift */; };
+		B2FC3126244C84FE00D7E241 /* TabOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC3125244C84FE00D7E241 /* TabOption.swift */; };
+		B2FC3128244C883B00D7E241 /* AppDelegate+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC3127244C883B00D7E241 /* AppDelegate+Delegate.swift */; };
 		B2FF55A62433902900DF1DCC /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = B2FF55A52433902900DF1DCC /* sample.txt */; };
 		B2FF55AA2433927700DF1DCC /* PreviewEditorLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF55A92433927700DF1DCC /* PreviewEditorLayoutManager.swift */; };
 		B2FF55AC24339CEF00DF1DCC /* Configuration+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF55AB24339CEF00DF1DCC /* Configuration+Utilities.swift */; };
@@ -136,6 +138,8 @@
 		B2C13D8B243387C1007A41C0 /* PreviewEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewEditor.swift; sourceTree = "<group>"; };
 		B2ECF6CB24328B5B00BC8466 /* TabConfigurationView+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabConfigurationView+Delegate.swift"; sourceTree = "<group>"; };
 		B2ECF6CD24328ECA00BC8466 /* TabRulesView+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabRulesView+Delegate.swift"; sourceTree = "<group>"; };
+		B2FC3125244C84FE00D7E241 /* TabOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOption.swift; sourceTree = "<group>"; };
+		B2FC3127244C883B00D7E241 /* AppDelegate+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Delegate.swift"; sourceTree = "<group>"; };
 		B2FF55A52433902900DF1DCC /* sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
 		B2FF55A92433927700DF1DCC /* PreviewEditorLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewEditorLayoutManager.swift; sourceTree = "<group>"; };
 		B2FF55AB24339CEF00DF1DCC /* Configuration+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configuration+Utilities.swift"; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				B26912152431ED5E00B3482B /* AppDelegate.swift */,
 				B24104AA2432190A00C36DB9 /* AppIcon.swift */,
 				B29654B5243234FF004265F3 /* AppDelegate+Actions.swift */,
+				B2FC3127244C883B00D7E241 /* AppDelegate+Delegate.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 		B2A9C6B124326F9600A2A83F /* tabs */ = {
 			isa = PBXGroup;
 			children = (
+				B2FC3125244C84FE00D7E241 /* TabOption.swift */,
 				B24C76DA2433747D0089E63C /* configuration */,
 				B24C76DB243374850089E63C /* rules */,
 			);
@@ -535,12 +541,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FC3126244C84FE00D7E241 /* TabOption.swift in Sources */,
 				B275394924322B540006DB97 /* ColorBackgroundView.swift in Sources */,
 				B2C13D8C243387C1007A41C0 /* PreviewEditor.swift in Sources */,
 				B24104AB2432190A00C36DB9 /* AppIcon.swift in Sources */,
 				B29654B6243234FF004265F3 /* AppDelegate+Actions.swift in Sources */,
 				B2ECF6CC24328B5B00BC8466 /* TabConfigurationView+Delegate.swift in Sources */,
 				B2FF55AA2433927700DF1DCC /* PreviewEditorLayoutManager.swift in Sources */,
+				B2FC3128244C883B00D7E241 /* AppDelegate+Delegate.swift in Sources */,
 				B2A9C6B324326FA900A2A83F /* TabConfigurationView.swift in Sources */,
 				B24992C5243240A100BE4C9D /* Array+JSON.swift in Sources */,
 				B24C76DE243379FE0089E63C /* TabRulesViewCellDelegate.swift in Sources */,
@@ -726,7 +734,7 @@
 				CODE_SIGN_ENTITLEMENTS = "X-SwiftFormat/XSwiftFormat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = "β95";
+				CURRENT_PROJECT_VERSION = "β96";
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat/Info.plist";
@@ -738,7 +746,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
 				);
-				MARKETING_VERSION = 0.9.5;
+				MARKETING_VERSION = 0.9.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -753,7 +761,7 @@
 				CODE_SIGN_ENTITLEMENTS = "X-SwiftFormat/XSwiftFormat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = "β95";
+				CURRENT_PROJECT_VERSION = "β96";
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat/Info.plist";
@@ -765,7 +773,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
 				);
-				MARKETING_VERSION = 0.9.5;
+				MARKETING_VERSION = 0.9.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

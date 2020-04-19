@@ -105,15 +105,33 @@ extension AppDelegate {
 	}
 
 	@IBAction func exportButtonPress(_ button: NSButton) {
+		var tabOption: TabOption = .configuration
+		if let selectedTabViewItem = tabView.selectedTabViewItem {
+			if let option = TabOption(rawValue: selectedTabViewItem.label) {
+				tabOption = option
+			}
+		}
 		let savePanel = NSSavePanel()
 		savePanel.canCreateDirectories = true
 		savePanel.showsTagField = false
-		savePanel.nameFieldStringValue = ".swift-format"
+		switch tabOption {
+		case .configuration:
+			savePanel.nameFieldStringValue = "swift-format-configuration.json"
+		case .rules:
+			savePanel.nameFieldStringValue = "swift-format-rules.json"
+		}
 		savePanel.beginSheetModal(for: self.window) { (response) in
 			if response.rawValue == 1 {
 				if let url = savePanel.url {
-					if let json = self.tabViewConfiguration.sharedConfiguration.jsonPretty {
-						try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+					switch tabOption {
+					case .configuration:
+						if let json = UserDefaults.configuration.jsonPretty {
+							try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+						}
+					case .rules:
+						if let json = UserDefaults.rules.jsonPretty {
+							try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+						}
 					}
 				}
 			}
