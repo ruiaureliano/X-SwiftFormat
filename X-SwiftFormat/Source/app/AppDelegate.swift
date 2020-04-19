@@ -100,8 +100,7 @@ import Cocoa
 							if let name = release["name"] as? String,
 								let tagName = release["tag_name"] as? String,
 								let publishedAt = release["published_at"] as? String,
-								let assets = release["assets"] as? [[String: Any]]
-							{
+								let assets = release["assets"] as? [[String: Any]] {
 								if let asset = assets.first {
 									if let browserDownloadURL = asset["browser_download_url"] as? String {
 										self.validateNewVersion(

@@ -125,11 +125,35 @@ extension AppDelegate {
 				if let url = savePanel.url {
 					switch tabOption {
 					case .configuration:
-						if let json = UserDefaults.configuration.jsonPretty {
+						var configuration: [String: Any] = [:]
+						for entry in UserDefaults.configuration {
+							configuration[entry.key] = entry.value
+						}
+						var metadata: [String: String] = ["type": "configuration"]
+						if let version = Bundle.main.CFBundleShortVersionString {
+							metadata["version"] = version
+						}
+						if let build = Bundle.main.CFBundleVersion {
+							metadata["build"] = build
+						}
+						configuration["metadata"] = metadata
+						if let json = configuration.jsonPretty {
 							try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
 						}
 					case .rules:
-						if let json = UserDefaults.rules.jsonPretty {
+						var rules: [String: Any] = [:]
+						for entry in UserDefaults.rules {
+							rules[entry.key] = entry.value
+						}
+						var metadata: [String: String] = ["type": "rules"]
+						if let version = Bundle.main.CFBundleShortVersionString {
+							metadata["version"] = version
+						}
+						if let build = Bundle.main.CFBundleVersion {
+							metadata["build"] = build
+						}
+						rules["metadata"] = metadata
+						if let json = rules.jsonPretty {
 							try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
 						}
 					}
