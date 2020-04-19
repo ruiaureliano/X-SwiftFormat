@@ -37,7 +37,7 @@ Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts
 
 ---
 
-# Installing [Apple Swift Format](https://github.com/apple/swift-format) (XCode or Mint)
+# Installing [Apple Swift Format](https://github.com/apple/swift-format) (Xcode or Mint)
 
 ## a) Using XCode
 if you are using **Xcode 11.4 (Swift 5.2)**, you can check out and build swift-format using the following commands:
