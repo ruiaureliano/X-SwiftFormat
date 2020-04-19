@@ -38,6 +38,8 @@ import Cocoa
 		window.isMovableByWindowBackground = true
 		previewWindow.superWindow = window
 
+		tabView.delegate = self
+
 		if let shortVersionString = Bundle.main.CFBundleShortVersionString, let version = Bundle.main.CFBundleVersion {
 			appVersion.stringValue = "Version: \(shortVersionString) (\(version))"
 		}

@@ -105,15 +105,57 @@ extension AppDelegate {
 	}
 
 	@IBAction func exportButtonPress(_ button: NSButton) {
+		var tabOption: TabOption = .configuration
+		if let selectedTabViewItem = tabView.selectedTabViewItem {
+			if let option = TabOption(rawValue: selectedTabViewItem.label) {
+				tabOption = option
+			}
+		}
 		let savePanel = NSSavePanel()
 		savePanel.canCreateDirectories = true
 		savePanel.showsTagField = false
-		savePanel.nameFieldStringValue = ".swift-format"
+		switch tabOption {
+		case .configuration:
+			savePanel.nameFieldStringValue = "swift-format-configuration.json"
+		case .rules:
+			savePanel.nameFieldStringValue = "swift-format-rules.json"
+		}
 		savePanel.beginSheetModal(for: self.window) { (response) in
 			if response.rawValue == 1 {
 				if let url = savePanel.url {
-					if let json = self.tabViewConfiguration.sharedConfiguration.jsonPretty {
-						try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+					switch tabOption {
+					case .configuration:
+						var configuration: [String: Any] = [:]
+						for entry in UserDefaults.configuration {
+							configuration[entry.key] = entry.value
+						}
+						var metadata: [String: String] = ["type": "configuration"]
+						if let version = Bundle.main.CFBundleShortVersionString {
+							metadata["version"] = version
+						}
+						if let build = Bundle.main.CFBundleVersion {
+							metadata["build"] = build
+						}
+						configuration["metadata"] = metadata
+						if let json = configuration.jsonPretty {
+							try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+						}
+					case .rules:
+						var rules: [String: Any] = [:]
+						for entry in UserDefaults.rules {
+							rules[entry.key] = entry.value
+						}
+						var metadata: [String: String] = ["type": "rules"]
+						if let version = Bundle.main.CFBundleShortVersionString {
+							metadata["version"] = version
+						}
+						if let build = Bundle.main.CFBundleVersion {
+							metadata["build"] = build
+						}
+						rules["metadata"] = metadata
+						if let json = rules.jsonPretty {
+							try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+						}
 					}
 				}
 			}
