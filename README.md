@@ -3,8 +3,6 @@
 
 ### 🔗 Download [X-SwiftFormat 0.9.6 (β96)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/β96/x-swiftformat_0.9.6_96.zip)
 
-[![](./assets/xsf_available_mas.png)](https://raw.githubusercontent.com/ruiaureliano/X-SwiftFormat/master/LICENSE)
-
 ---
 
 ### 1) Open X-SwiftFormat
