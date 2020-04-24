@@ -1,4 +1,4 @@
-# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](https://raw.githubusercontent.com/ruiaureliano/X-SwiftFormat/master/LICENSE) ![](https://img.shields.io/badge/swift-5.2-eb3d33.svg)
+# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](./LICENSE.md) ![](https://img.shields.io/badge/swift-5.2-eb3d33.svg)
 
 ![](./assets/xsf_header.png)
 
