@@ -1,4 +1,8 @@
-# MIT License [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](./LICENSE.md)
+# MIT License [![](https://img.shields.io/badge/swift-5.2-eb3d33.svg)](https://swift.org/blog/swift-5-2-released/) [![](https://img.shields.io/badge/docs-1.0-eb3d33.svg)](./DOCS.md)
+
+![](./assets/readme/xsf_header.png)
+
+---
 
 **Copyright (c) 2020 Rui Aureliano**
 

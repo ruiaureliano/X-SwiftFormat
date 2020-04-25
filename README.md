@@ -1,19 +1,17 @@
-# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](./LICENSE.md) ![](https://img.shields.io/badge/swift-5.2-eb3d33.svg)
-![](./assets/xsf_header.png)
+# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](https://raw.githubusercontent.com/ruiaureliano/X-SwiftFormat/master/LICENSE) [![](https://img.shields.io/badge/swift-5.2-eb3d33.svg)](https://swift.org/blog/swift-5-2-released/) [![](https://img.shields.io/badge/docs-1.0-eb3d33.svg)](./DOCS.md)
 
-### 🔗 Download [X-SwiftFormat 0.9.6 (β96)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/β96/x-swiftformat_0.9.6_96.zip)
-
----
+<a href="https://apps.apple.com/app/x-swiftformat/id1509655496?ls=1"><img src="./assets/readme/xsf_available_mas.png" alt="" width="175" height="50"></a>
+<a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0/x-swiftformat_1.0_.200427.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
 
 ### 1) Open X-SwiftFormat
 
 **X-SwiftFormat** works as Xcode Extension to format your swift code. You will need to open this once to activate it 👍
 
-![](./assets/xsf_running.png)
+![](./assets/readme/xsf_running.png)
 
 **a)** You case use the **Preview** to see the format running in the app 🦾
 
-![](./assets/xsf_format.gif)
+![](./assets/readme/xsf_format.gif)
 
 **b)** You can export a configuration file (`.swift-format`) to use later 🖥
 
@@ -21,19 +19,19 @@
 
 Open **System Preferences** ▸ **Extensions** ▸ **Xcode Source Editor** and make sure **X-SwiftFormat** is selected ✅
 
-![](./assets/xsf_extensions.png)
+![](./assets/readme/xsf_extensions.png)
 
 ### 3) Use X-SwiftFormat
 
 Open Xcode and use the **Format Swift Code** command in Xcode's **Editor** menu 🚀
 
-![](./assets/xsf_usage.png)
+![](./assets/readme/xsf_usage.png)
 
 ### 4) Add X-SwiftFormat Shortcut
 
 Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts** tab. Select **App Shortcuts**, then hit the <kbd>+</kbd> button. Select **Xcode**, enter `Format Swift Code` and set your **Shortcut**.👏
 
-![](./assets/xsf_shortcuts.png)
+![](./assets/readme/xsf_shortcuts.png)
 
 ---
 
