@@ -1,5 +1,7 @@
 # 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](https://raw.githubusercontent.com/ruiaureliano/X-SwiftFormat/master/LICENSE) [![](https://img.shields.io/badge/swift-5.2-eb3d33.svg)](https://swift.org/blog/swift-5-2-released/) [![](https://img.shields.io/badge/docs-1.0-eb3d33.svg)](./DOCS.md)
 
+![](./assets/readme/xsf_header.png)
+
 <a href="https://apps.apple.com/app/x-swiftformat/id1509655496?ls=1"><img src="./assets/readme/xsf_available_mas.png" alt="" width="175" height="50"></a>
 <a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0/x-swiftformat_1.0_.200427.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
 
