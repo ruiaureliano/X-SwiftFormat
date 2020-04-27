@@ -37,8 +37,16 @@ extension AppDelegate {
 		}
 	}
 
-	@IBAction func exportMenuItem(_ button: NSMenuItem) {
-		exportFiles()
+	@IBAction func exportMenuItemConfiguration(_ button: NSMenuItem) {
+		exportConfigurationFile()
+	}
+
+	@IBAction func exportMenuItemRules(_ button: NSMenuItem) {
+		exportRulesFile()
+	}
+
+	@IBAction func exportMenuItemSwiftFormat(_ button: NSMenuItem) {
+		exportSwiftFormatFile()
 	}
 
 	@IBAction func previewMenuItem(_ button: NSMenuItem) {

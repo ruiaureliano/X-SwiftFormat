@@ -99,7 +99,84 @@ import Cocoa
 		}
 	}
 
-	func exportFiles() {
+	func exportConfigurationFile() {
+		let savePanel = NSSavePanel()
+		savePanel.canCreateDirectories = true
+		savePanel.showsTagField = false
+		savePanel.nameFieldStringValue = "swift-format-configuration.\(XSFDocType.config.rawValue)"
+
+		savePanel.beginSheetModal(for: self.window) { (response) in
+			if response.rawValue == 1 {
+				if let url = savePanel.url {
+					var configuration: [String: Any] = [:]
+					for entry in UserDefaults.configuration {
+						configuration[entry.key] = entry.value
+					}
+					var metadata: [String: String] = ["type": "configuration"]
+					if let version = Bundle.main.CFBundleShortVersionString {
+						metadata["version"] = version
+					}
+					if let build = Bundle.main.CFBundleVersion {
+						metadata["build"] = build
+					}
+					configuration["metadata"] = metadata
+					if let json = configuration.jsonPretty {
+						try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+					}
+				}
+			}
+		}
+	}
+
+	func exportRulesFile() {
+		let savePanel = NSSavePanel()
+		savePanel.canCreateDirectories = true
+		savePanel.showsTagField = false
+		savePanel.nameFieldStringValue = "swift-format-rules.\(XSFDocType.rules.rawValue)"
+		savePanel.beginSheetModal(for: self.window) { (response) in
+			if response.rawValue == 1 {
+				if let url = savePanel.url {
+					var rules: [String: Any] = [:]
+					for entry in UserDefaults.rules {
+						rules[entry.key] = entry.value
+					}
+					var metadata: [String: String] = ["type": "rules"]
+					if let version = Bundle.main.CFBundleShortVersionString {
+						metadata["version"] = version
+					}
+					if let build = Bundle.main.CFBundleVersion {
+						metadata["build"] = build
+					}
+					rules["metadata"] = metadata
+					if let json = rules.jsonPretty {
+						try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+					}
+				}
+			}
+		}
+	}
+
+	func exportSwiftFormatFile() {
+		let savePanel = NSSavePanel()
+		savePanel.canCreateDirectories = true
+		savePanel.showsTagField = false
+		savePanel.nameFieldStringValue = ".swift-format"
+		savePanel.beginSheetModal(for: self.window) { (response) in
+			if response.rawValue == 1 {
+				if let url = savePanel.url {
+					var swiftformat: [String: Any] = UserDefaults.configuration
+					if UserDefaults.rules.count > 0 {
+						swiftformat["rules"] = UserDefaults.rules
+					}
+					if let json = swiftformat.jsonPretty {
+						try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+					}
+				}
+			}
+		}
+	}
+
+	func exportConfigurationOrRulesFile() {
 		var tabOption: TabOption = .configuration
 		if let selectedTabViewItem = tabView.selectedTabViewItem {
 			if let option = TabOption(rawValue: selectedTabViewItem.label) {

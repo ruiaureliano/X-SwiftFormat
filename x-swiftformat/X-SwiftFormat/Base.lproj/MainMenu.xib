@@ -92,11 +92,31 @@
                                     <action selector="importMenuItem:" target="Voe-Tx-rLC" id="8qD-Km-doA"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Export" id="7gd-ZT-S38">
+                            <menuItem title="Export" id="2Di-7v-tZj">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="exportMenuItem:" target="Voe-Tx-rLC" id="8uU-qG-UYT"/>
-                                </connections>
+                                <menu key="submenu" title="Export" id="wDJ-9h-N8q">
+                                    <items>
+                                        <menuItem title="Configuration (.xsfconfig)" tag="1" id="5jp-UI-2Uy">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportMenuItemConfiguration:" target="Voe-Tx-rLC" id="Niw-iX-d1Q"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Rules (.xsfrules)" tag="12" id="EJv-TL-5nZ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportMenuItemRules:" target="Voe-Tx-rLC" id="xtR-Ul-BGG"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="8Pq-Lf-ntR"/>
+                                        <menuItem title="Swift Format (.swift-format)" tag="3" id="twr-Dp-eWJ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportMenuItemSwiftFormat:" target="Voe-Tx-rLC" id="TZ0-mE-gCJ"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
                             <menuItem title="Preview Source" id="bmS-KS-OGf">
@@ -866,7 +886,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Rc1-37-xbz" userLabel="CLIP">
                                     <rect key="frame" x="0.0" y="0.0" width="560" height="390"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="ktQ-Zf-BsB" userLabel="TEXTVIEW" customClass="PreviewEditor" customModule="X_SwiftFormat" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="390"/>

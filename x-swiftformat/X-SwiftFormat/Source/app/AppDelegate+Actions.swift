@@ -63,6 +63,6 @@ extension AppDelegate {
 	}
 
 	@IBAction func exportButtonPress(_ button: NSButton) {
-		exportFiles()
+		exportConfigurationOrRulesFile()
 	}
 }
