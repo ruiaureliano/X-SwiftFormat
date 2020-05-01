@@ -3,7 +3,7 @@
 ![](./assets/readme/xsf_header.png)
 
 <a href="https://apps.apple.com/app/x-swiftformat/id1509655496?ls=1"><img src="./assets/readme/xsf_available_mas.png" alt="" width="175" height="50"></a>
-<a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0/x-swiftformat_1.0_.200427.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
+<a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.1/x-swiftformat_1.0.1_.2000501.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
 
 ### 1) Open X-SwiftFormat
 
