@@ -15,7 +15,6 @@ import Cocoa
 
 	@IBOutlet weak var appIcon: NSImageView!
 	@IBOutlet weak var appName: NSTextField!
-	@IBOutlet weak var appVersion: NSTextField!
 	var appVersionName: String?
 	var appVersionButtonURL: String?
 
@@ -38,10 +37,7 @@ import Cocoa
 		previewWindow.superWindow = window
 
 		tabView.delegate = self
-
-		if let shortVersionString = Bundle.main.CFBundleShortVersionString {
-			appVersion.stringValue = "Version: \(shortVersionString)"
-		}
+		
 		if let executable = Bundle.main.CFBundleExecutable {
 			appName.stringValue = executable
 		}

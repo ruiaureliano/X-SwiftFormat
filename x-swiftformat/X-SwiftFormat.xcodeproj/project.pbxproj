@@ -30,6 +30,8 @@
 		B2753943243228E10006DB97 /* TabConfigurationViewCellNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753942243228E10006DB97 /* TabConfigurationViewCellNumber.swift */; };
 		B2753945243228EC0006DB97 /* TabConfigurationViewCellObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753944243228EC0006DB97 /* TabConfigurationViewCellObject.swift */; };
 		B275394924322B540006DB97 /* ColorBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275394824322B540006DB97 /* ColorBackgroundView.swift */; };
+		B280628A245C8A9200609530 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2806289245C8A9200609530 /* String+Substring.swift */; };
+		B280628B245C8AB000609530 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2806289245C8A9200609530 /* String+Substring.swift */; };
 		B28A528524333C5200904943 /* String+ReverseCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A528424333C5200904943 /* String+ReverseCamel.swift */; };
 		B29654B424322E9C004265F3 /* Bundle+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29654B324322E9C004265F3 /* Bundle+Utilities.swift */; };
 		B29654B6243234FF004265F3 /* AppDelegate+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29654B5243234FF004265F3 /* AppDelegate+Actions.swift */; };
@@ -123,6 +125,7 @@
 		B2753942243228E10006DB97 /* TabConfigurationViewCellNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabConfigurationViewCellNumber.swift; sourceTree = "<group>"; };
 		B2753944243228EC0006DB97 /* TabConfigurationViewCellObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabConfigurationViewCellObject.swift; sourceTree = "<group>"; };
 		B275394824322B540006DB97 /* ColorBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBackgroundView.swift; sourceTree = "<group>"; };
+		B2806289245C8A9200609530 /* String+Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
 		B28A528424333C5200904943 /* String+ReverseCamel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReverseCamel.swift"; sourceTree = "<group>"; };
 		B29654B324322E9C004265F3 /* Bundle+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Utilities.swift"; sourceTree = "<group>"; };
 		B29654B5243234FF004265F3 /* AppDelegate+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Actions.swift"; sourceTree = "<group>"; };
@@ -369,6 +372,7 @@
 				B2A9C6AF24326C7800A2A83F /* UserDefaults+Suite.swift */,
 				B28A528424333C5200904943 /* String+ReverseCamel.swift */,
 				B2FF55AB24339CEF00DF1DCC /* Configuration+Utilities.swift */,
+				B2806289245C8A9200609530 /* String+Substring.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -586,6 +590,7 @@
 				B2753943243228E10006DB97 /* TabConfigurationViewCellNumber.swift in Sources */,
 				B2A9C6B524326FB500A2A83F /* TabRulesView.swift in Sources */,
 				B24104A62432127E00C36DB9 /* Config.swift in Sources */,
+				B280628A245C8A9200609530 /* String+Substring.swift in Sources */,
 				B26BC8352450AE640037BB85 /* XSFDocHandler.swift in Sources */,
 				B24104A92432157500C36DB9 /* SwiftFormatOutputStream.swift in Sources */,
 				B2753941243228CE0006DB97 /* TabConfigurationViewCellSwitch.swift in Sources */,
@@ -601,6 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29C14F924348F4B007A6F1F /* SourceEditorExtension.swift in Sources */,
+				B280628B245C8AB000609530 /* String+Substring.swift in Sources */,
 				B29C150824349037007A6F1F /* Array+JSON.swift in Sources */,
 				B29C150724349037007A6F1F /* Data+JSON.swift in Sources */,
 				B29C150E2434913B007A6F1F /* SwiftFormatOutputStream.swift in Sources */,
@@ -754,7 +760,7 @@
 				CODE_SIGN_ENTITLEMENTS = "X-SwiftFormat/XSwiftFormat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 200427;
+				CURRENT_PROJECT_VERSION = 200501;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -785,7 +791,7 @@
 				CODE_SIGN_ENTITLEMENTS = "X-SwiftFormat/XSwiftFormat.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 200427;
+				CURRENT_PROJECT_VERSION = 200501;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (

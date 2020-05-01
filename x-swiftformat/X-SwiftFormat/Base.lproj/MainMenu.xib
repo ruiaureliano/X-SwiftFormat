@@ -18,7 +18,6 @@
             <connections>
                 <outlet property="appIcon" destination="icE-xt-TuE" id="lKo-oC-Osn"/>
                 <outlet property="appName" destination="lYt-6T-LLK" id="8BP-As-DKv"/>
-                <outlet property="appVersion" destination="lGL-5g-bq3" id="hdn-Ra-MLN"/>
                 <outlet property="previewButton" destination="MDw-KI-Al3" id="vi7-BM-Pw5"/>
                 <outlet property="previewWindow" destination="nRm-5g-kFU" id="IbP-qq-ZUq"/>
                 <outlet property="resetButton" destination="MC4-aL-j94" id="gcG-uL-943"/>
@@ -468,15 +467,6 @@
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="X-SwiftFormat" id="J6E-rH-bkG">
                                             <font key="font" metaFont="systemLight" size="25"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lGL-5g-bq3" userLabel="APP VERSION">
-                                        <rect key="frame" x="5" y="57" width="180" height="16"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Version 1.0 (100)" id="Bvw-LY-UwK">
-                                            <font key="font" metaFont="systemLight" size="13"/>
-                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
