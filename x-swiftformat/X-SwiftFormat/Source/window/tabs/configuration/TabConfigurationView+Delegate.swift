@@ -54,7 +54,6 @@ extension TabConfigurationView: TabConfigurationViewCellDelegate {
 			self.sharedConfiguration.removeValue(forKey: key)
 		}
 		_ = UserDefaults.saveConfiguration(configuration: sharedConfiguration)
-		self.exportButton.isEnabled = (sharedConfiguration.count > 0)
 	}
 
 	func numberChanged(key: String, labelValue: Bool, stepperValue: Int) {
@@ -64,7 +63,6 @@ extension TabConfigurationView: TabConfigurationViewCellDelegate {
 			self.sharedConfiguration.removeValue(forKey: key)
 		}
 		_ = UserDefaults.saveConfiguration(configuration: sharedConfiguration)
-		self.exportButton.isEnabled = (sharedConfiguration.count > 0)
 	}
 
 	func objectChanged(key: String, labelValue: Bool, popup: String, stepperValue: Int) {
@@ -74,6 +72,5 @@ extension TabConfigurationView: TabConfigurationViewCellDelegate {
 			self.sharedConfiguration.removeValue(forKey: key)
 		}
 		_ = UserDefaults.saveConfiguration(configuration: sharedConfiguration)
-		self.exportButton.isEnabled = (sharedConfiguration.count > 0)
 	}
 }

@@ -18,10 +18,8 @@ class XSFDocHandler: NSObject {
 				if split.count == 2 {
 					if let docType = XSFDocType(rawValue: String(split[1]).lowercased()) {
 						switch docType {
-						case .config:
-							readConfigFile(with: URL(fileURLWithPath: filename))
-						case .rules:
-							readRulesFile(with: URL(fileURLWithPath: filename))
+						case .swiftformat:
+							readSwiftFormatFile(with: URL(fileURLWithPath: filename))
 						}
 					}
 				}
@@ -29,26 +27,21 @@ class XSFDocHandler: NSObject {
 		}
 	}
 
-	static func readConfigFile(with url: URL) {
+	static func readSwiftFormatFile(with url: URL) {
+
 		if let data = try? Data(contentsOf: url) {
 			if let json = data.json as? [String: Any] {
+
 				var configuration: [String: Any] = [:]
 				for entry in json {
 					let key = entry.key
 					let value = entry.value
-					if key != "metadata" {
+					if key != "metadata" && key != "rules" {
 						configuration[key] = value
 					}
 				}
 				_ = UserDefaults.saveConfiguration(configuration: configuration)
-				NotificationCenter.default.post(name: kReadXSFFileNotification, object: nil)
-			}
-		}
-	}
 
-	static func readRulesFile(with url: URL) {
-		if let data = try? Data(contentsOf: url) {
-			if let json = data.json as? [String: Any] {
 				var rules: [String: Bool] = [:]
 				for entry in json {
 					let key = entry.key
@@ -59,6 +52,7 @@ class XSFDocHandler: NSObject {
 					}
 				}
 				_ = UserDefaults.saveRules(rules: rules)
+
 				NotificationCenter.default.post(name: kReadXSFFileNotification, object: nil)
 			}
 		}

@@ -2,7 +2,7 @@
 
 ![](./assets/readme/xsf_header.png)
 
-<a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.1/x-swiftformat_1.0.1_.2000501.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
+<a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.2/x-swiftformat_1.0.2_.2000601.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
 
 ### 1) Open X-SwiftFormat
 

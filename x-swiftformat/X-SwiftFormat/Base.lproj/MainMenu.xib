@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -85,37 +85,17 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="j0m-ne-3Ve"/>
-                            <menuItem title="Import" id="hlF-EV-kot">
+                            <menuItem title="Import Swift-Format (.swift-format)" id="hlF-EV-kot">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="importMenuItem:" target="Voe-Tx-rLC" id="8qD-Km-doA"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Export" id="2Di-7v-tZj">
+                            <menuItem title="Export Swift-Format (.swift-format)" tag="3" id="sja-VE-JgI">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Export" id="wDJ-9h-N8q">
-                                    <items>
-                                        <menuItem title="Configuration (.xsfconfig)" tag="1" id="5jp-UI-2Uy">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="exportMenuItemConfiguration:" target="Voe-Tx-rLC" id="Niw-iX-d1Q"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Rules (.xsfrules)" tag="12" id="EJv-TL-5nZ">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="exportMenuItemRules:" target="Voe-Tx-rLC" id="xtR-Ul-BGG"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="8Pq-Lf-ntR"/>
-                                        <menuItem title="Swift Format (.swift-format)" tag="3" id="twr-Dp-eWJ">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="exportMenuItemSwiftFormat:" target="Voe-Tx-rLC" id="TZ0-mE-gCJ"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
+                                <connections>
+                                    <action selector="exportMenuItem:" target="Voe-Tx-rLC" id="wkT-DS-4Zy"/>
+                                </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
                             <menuItem title="Preview Source" id="bmS-KS-OGf">
@@ -707,9 +687,6 @@
                                                                         </prototypeCellViews>
                                                                     </tableColumn>
                                                                 </tableColumns>
-                                                                <connections>
-                                                                    <outlet property="exportButton" destination="rat-gW-Vve" id="ane-VY-dRh"/>
-                                                                </connections>
                                                             </tableView>
                                                         </subviews>
                                                         <nil key="backgroundColor"/>
@@ -787,9 +764,6 @@
                                                                         </prototypeCellViews>
                                                                     </tableColumn>
                                                                 </tableColumns>
-                                                                <connections>
-                                                                    <outlet property="exportButton" destination="rat-gW-Vve" id="rWn-H3-De7"/>
-                                                                </connections>
                                                             </tableView>
                                                         </subviews>
                                                         <nil key="backgroundColor"/>
@@ -822,7 +796,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MC4-aL-j94" userLabel="RESET">
-                        <rect key="frame" x="495" y="13" width="80" height="32"/>
+                        <rect key="frame" x="576" y="13" width="80" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6El-hx-ctY">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -833,7 +807,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDw-KI-Al3" userLabel="PREVIEW">
-                        <rect key="frame" x="575" y="13" width="80" height="32"/>
+                        <rect key="frame" x="656" y="13" width="80" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="Preview" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZAA-wK-MFC">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -841,17 +815,6 @@
                         </buttonCell>
                         <connections>
                             <action selector="previewButtonPress:" target="Voe-Tx-rLC" id="ofx-AC-DXZ"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rat-gW-Vve" userLabel="EXPORT">
-                        <rect key="frame" x="656" y="13" width="80" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="Export" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ayz-mX-LsK">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="systemLight" size="13"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="exportButtonPress:" target="Voe-Tx-rLC" id="8kL-Je-Qxm"/>
                         </connections>
                     </button>
                 </subviews>

@@ -10,7 +10,6 @@ import Cocoa
 
 class TabConfigurationView: NSTableView {
 
-	@IBOutlet weak var exportButton: NSButton!
 	var sharedConfiguration: [String: Any] = [:]
 
 	override func awakeFromNib() {
@@ -18,12 +17,10 @@ class TabConfigurationView: NSTableView {
 		self.dataSource = self
 		self.delegate = self
 		self.sharedConfiguration = UserDefaults.configuration
-		self.exportButton.isEnabled = (sharedConfiguration.count > 0)
 	}
 
 	func reloadDataSource() {
 		self.sharedConfiguration = UserDefaults.configuration
-		self.exportButton.isEnabled = (sharedConfiguration.count > 0)
 		self.reloadData()
 	}
 }

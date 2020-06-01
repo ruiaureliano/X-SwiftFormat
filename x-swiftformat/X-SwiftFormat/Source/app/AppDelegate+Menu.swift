@@ -21,32 +21,38 @@ extension AppDelegate {
 		dialog.showsHiddenFiles = true
 		dialog.canChooseDirectories = false
 		dialog.allowsMultipleSelection = true
-		dialog.allowedFileTypes = [XSFDocType.config.rawValue, XSFDocType.rules.rawValue]
-
+		dialog.allowedFileTypes = [XSFDocType.swiftformat.rawValue]
 		if dialog.runModal() == .OK {
 			for url in dialog.urls {
+				debugPrint(url.pathExtension.lowercased())
 				if let docType = XSFDocType(rawValue: url.pathExtension.lowercased()) {
 					switch docType {
-					case .config:
-						XSFDocHandler.readConfigFile(with: url)
-					case .rules:
-						XSFDocHandler.readRulesFile(with: url)
+					case .swiftformat:
+						XSFDocHandler.readSwiftFormatFile(with: url)
 					}
 				}
 			}
 		}
 	}
 
-	@IBAction func exportMenuItemConfiguration(_ button: NSMenuItem) {
-		exportConfigurationFile()
-	}
-
-	@IBAction func exportMenuItemRules(_ button: NSMenuItem) {
-		exportRulesFile()
-	}
-
-	@IBAction func exportMenuItemSwiftFormat(_ button: NSMenuItem) {
-		exportSwiftFormatFile()
+	@IBAction func exportMenuItem(_ button: NSMenuItem) {
+		let savePanel = NSSavePanel()
+		savePanel.canCreateDirectories = true
+		savePanel.showsTagField = false
+		savePanel.nameFieldStringValue = ".swift-format"
+		savePanel.beginSheetModal(for: self.window) { (response) in
+			if response.rawValue == 1 {
+				if let url = savePanel.url {
+					var swiftformat: [String: Any] = UserDefaults.configuration
+					if UserDefaults.rules.count > 0 {
+						swiftformat["rules"] = UserDefaults.rules
+					}
+					if let json = swiftformat.jsonPretty {
+						try? json.write(to: url, atomically: true, encoding: String.Encoding.utf8)
+					}
+				}
+			}
+		}
 	}
 
 	@IBAction func previewMenuItem(_ button: NSMenuItem) {

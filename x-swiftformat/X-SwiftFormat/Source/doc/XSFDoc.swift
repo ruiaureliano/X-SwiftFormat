@@ -11,8 +11,7 @@ import Cocoa
 let kReadXSFFileNotification = NSNotification.Name(rawValue: "kReadXSFFileNotification")
 
 enum XSFDocType: String {
-	case config = "xsfconfig"
-	case rules = "xsfrules"
+	case swiftformat = ""
 }
 
 class XSFDoc: NSDocument {

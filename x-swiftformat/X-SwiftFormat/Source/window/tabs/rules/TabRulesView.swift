@@ -10,7 +10,6 @@ import Cocoa
 
 class TabRulesView: NSTableView {
 
-	@IBOutlet weak var exportButton: NSButton!
 	var sharedRules: [String: Bool] = [:]
 
 	override func awakeFromNib() {
@@ -18,12 +17,10 @@ class TabRulesView: NSTableView {
 		self.dataSource = self
 		self.delegate = self
 		self.sharedRules = UserDefaults.rules
-		self.exportButton.isEnabled = (sharedRules.count > 0)
 	}
 
 	func reloadDataSource() {
 		self.sharedRules = UserDefaults.rules
-		self.exportButton.isEnabled = (sharedRules.count > 0)
 		self.reloadData()
 	}
 }

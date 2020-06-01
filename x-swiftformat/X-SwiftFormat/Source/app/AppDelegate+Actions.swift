@@ -61,8 +61,4 @@ extension AppDelegate {
 		previewWindow.openWithConfiguration(configuration: tabViewConfiguration.sharedConfiguration, rules: tabViewRules.sharedRules)
 		previewWindow.makeKeyAndOrderFront(self)
 	}
-
-	@IBAction func exportButtonPress(_ button: NSButton) {
-		exportConfigurationOrRulesFile()
-	}
 }
