@@ -77,7 +77,7 @@ class Config: NSObject {
 				"spaces",
 				"tabs"
 			],
-			"value": 4,
+			"value": 2,
 			"max": 100,
 			"min": 1,
 			"increment": 1
