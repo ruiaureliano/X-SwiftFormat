@@ -3,7 +3,7 @@
 ![](./assets/readme/xsf_header.png)
 
 # Installation
-- Directly donwload from GitHub
+- Download from GitHub
 
   <a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.2/x-swiftformat_1.0.2.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
 
