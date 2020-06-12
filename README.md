@@ -2,7 +2,18 @@
 
 ![](./assets/readme/xsf_header.png)
 
-<a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.2/x-swiftformat_1.0.2.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
+# Installation
+- Download from GitHub
+
+  <a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.2/x-swiftformat_1.0.2.zip"><img src="./assets/readme/xsf_available_github.png" alt="" width="175" height="50"></a>
+
+- Using Homebrew
+
+  ```shel
+  brew cask install x-swiftformat
+  ```
+
+# Usage
 
 ### 1) Open X-SwiftFormat
 
