@@ -13,7 +13,7 @@
 let kSwiftFormatVersion = "5.3"
 let kSwiftFormatName = "swift-format 5.3"
 let kSwiftFormatDescription = "Formatting technology for Swift source code"
-let kSwiftFormatURL = "https://github.com/apple/swift-format"
+let kSwiftFormatURL = "https://github.com/apple/swift-format/tree/swift-5.3-branch"
 
 /*
  * swift-syntax https://github.com/apple/swift-syntax
@@ -22,7 +22,7 @@ let kSwiftFormatURL = "https://github.com/apple/swift-format"
 let kSwiftSyntaxVersion = "5.3"
 let kSwiftSyntaxName = "swift-syntax 5.3"
 let kSwiftSyntaxDescription = "SwiftPM package for SwiftSyntax library."
-let kSwiftSyntaxURL = "https://github.com/apple/swift-syntax"
+let kSwiftSyntaxURL = "https://github.com/apple/swift-syntax/tree/release/5.3"
 
 /*
  * X-SwiftFormat https://github.com/ruiaureliano/X-SwiftFormat

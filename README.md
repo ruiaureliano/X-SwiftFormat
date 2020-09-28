@@ -1,4 +1,4 @@
-# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](https://raw.githubusercontent.com/ruiaureliano/X-SwiftFormat/master/LICENSE) [![](https://img.shields.io/badge/swift-5.2-eb3d33.svg)](https://swift.org/blog/swift-5-2-released/) [![](https://img.shields.io/badge/docs-1.0-eb3d33.svg)](./DOCS.md)
+# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-eb3d33.svg)](https://swift.org/blog/swift-5-2-released/) [![](https://img.shields.io/badge/docs-1.0-eb3d33.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
@@ -50,10 +50,10 @@ Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts
 # Installing [Apple Swift Format](https://github.com/apple/swift-format) (Xcode or Mint)
 
 ## a) Using Xcode
-if you are using **Xcode 11.4 (Swift 5.2)**, you can check out and build swift-format using the following commands:
+if you are using **Xcode 12 (Swift 5.3)**, you can check out and build swift-format using the following commands:
 
 ```
-git clone -b swift-5.2-branch https://github.com/apple/swift-format.git
+git clone -b swift-5.3-branch https://github.com/apple/swift-format.git
 cd swift-format
 swift build
 ```
@@ -69,15 +69,15 @@ If you dint have **Homebrew**, install [here](https://brew.sh)
 
 ```
 brew install mint
-mint install apple/swift-format@swift-5.2-branch
+mint install apple/swift-format@swift-5.3-branch
 ```
 You should see this
 ```
-🌱 Cloning swift-format swift-5.2-branch
+🌱 Cloning swift-format swift-5.3-branch
 🌱 Resolving package
 🌱 Building package
-🌱 Installed swift-format swift-5.2-branch
-🌱 Linked swift-format swift-5.2-branch to /usr/local/bin
+🌱 Installed swift-format swift-5.3-branch
+🌱 Linked swift-format swift-5.3-branch to /usr/local/bin
 ```
 👍👍👍
 
@@ -85,7 +85,7 @@ You should see this
 
 ```
 swift-format -v
-0.0.1
+0.50300.0
 ```
 
 |Command | Description |

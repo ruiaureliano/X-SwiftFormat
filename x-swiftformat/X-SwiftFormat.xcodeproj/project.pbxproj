@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B241049924320B4400C36DB9 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = B241049824320B4400C36DB9 /* SwiftFormat */; };
-		B241049B24320B4400C36DB9 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = B241049A24320B4400C36DB9 /* SwiftFormatConfiguration */; };
 		B241049E24320CAE00C36DB9 /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B241049D24320CAE00C36DB9 /* lib_InternalSwiftSyntaxParser.dylib */; };
 		B241049F24320CAE00C36DB9 /* lib_InternalSwiftSyntaxParser.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B241049D24320CAE00C36DB9 /* lib_InternalSwiftSyntaxParser.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B24104A324320D8F00C36DB9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24104A224320D8F00C36DB9 /* Constants.swift */; };
@@ -45,8 +43,6 @@
 		B29C150624349037007A6F1F /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24992C02432402100BE4C9D /* Dictionary+JSON.swift */; };
 		B29C150724349037007A6F1F /* Data+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24992C22432408A00BE4C9D /* Data+JSON.swift */; };
 		B29C150824349037007A6F1F /* Array+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24992C4243240A100BE4C9D /* Array+JSON.swift */; };
-		B29C150A243490C2007A6F1F /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = B29C1509243490C2007A6F1F /* SwiftFormat */; };
-		B29C150C243490C2007A6F1F /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = B29C150B243490C2007A6F1F /* SwiftFormatConfiguration */; };
 		B29C150D24349101007A6F1F /* Configuration+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF55AB24339CEF00DF1DCC /* Configuration+Utilities.swift */; };
 		B29C150E2434913B007A6F1F /* SwiftFormatOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24104A82432157500C36DB9 /* SwiftFormatOutputStream.swift */; };
 		B2A9C6AE243267C500A2A83F /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A9C6AD243267C500A2A83F /* AnimatedButton.swift */; };
@@ -58,6 +54,10 @@
 		B2C13D8C243387C1007A41C0 /* PreviewEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C13D8B243387C1007A41C0 /* PreviewEditor.swift */; };
 		B2ECF6CC24328B5B00BC8466 /* TabConfigurationView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECF6CB24328B5B00BC8466 /* TabConfigurationView+Delegate.swift */; };
 		B2ECF6CE24328ECA00BC8466 /* TabRulesView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECF6CD24328ECA00BC8466 /* TabRulesView+Delegate.swift */; };
+		B2EE340125223D04007BBD6F /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = B2EE340025223D04007BBD6F /* SwiftFormat */; };
+		B2EE340325223D04007BBD6F /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = B2EE340225223D04007BBD6F /* SwiftFormatConfiguration */; };
+		B2EE340725223DBB007BBD6F /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = B2EE340625223DBB007BBD6F /* SwiftFormat */; };
+		B2EE340925223DBB007BBD6F /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = B2EE340825223DBB007BBD6F /* SwiftFormatConfiguration */; };
 		B2FC3126244C84FE00D7E241 /* TabOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC3125244C84FE00D7E241 /* TabOption.swift */; };
 		B2FC3128244C883B00D7E241 /* AppDelegate+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC3127244C883B00D7E241 /* AppDelegate+Delegate.swift */; };
 		B2FC312C244C999900D7E241 /* AppDelegate+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC312B244C999900D7E241 /* AppDelegate+Menu.swift */; };
@@ -159,9 +159,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B241049B24320B4400C36DB9 /* SwiftFormatConfiguration in Frameworks */,
 				B241049E24320CAE00C36DB9 /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */,
-				B241049924320B4400C36DB9 /* SwiftFormat in Frameworks */,
+				B2EE340325223D04007BBD6F /* SwiftFormatConfiguration in Frameworks */,
+				B2EE340125223D04007BBD6F /* SwiftFormat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29C14F624348F4B007A6F1F /* Cocoa.framework in Frameworks */,
-				B29C150C243490C2007A6F1F /* SwiftFormatConfiguration in Frameworks */,
-				B29C150A243490C2007A6F1F /* SwiftFormat in Frameworks */,
+				B2EE340925223DBB007BBD6F /* SwiftFormatConfiguration in Frameworks */,
+				B2EE340725223DBB007BBD6F /* SwiftFormat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,8 +448,8 @@
 			);
 			name = "X-SwiftFormat";
 			packageProductDependencies = (
-				B241049824320B4400C36DB9 /* SwiftFormat */,
-				B241049A24320B4400C36DB9 /* SwiftFormatConfiguration */,
+				B2EE340025223D04007BBD6F /* SwiftFormat */,
+				B2EE340225223D04007BBD6F /* SwiftFormatConfiguration */,
 			);
 			productName = "X-SwiftFormat";
 			productReference = B26912122431ED5E00B3482B /* X-SwiftFormat.app */;
@@ -469,8 +469,8 @@
 			);
 			name = "X-SwiftFormat-Extension";
 			packageProductDependencies = (
-				B29C1509243490C2007A6F1F /* SwiftFormat */,
-				B29C150B243490C2007A6F1F /* SwiftFormatConfiguration */,
+				B2EE340625223DBB007BBD6F /* SwiftFormat */,
+				B2EE340825223DBB007BBD6F /* SwiftFormatConfiguration */,
 			);
 			productName = "X-SwiftFormat-Extension";
 			productReference = B29C14F424348F4B007A6F1F /* X-SwiftFormat-Extension.appex */;
@@ -504,7 +504,7 @@
 			);
 			mainGroup = B26912092431ED5E00B3482B;
 			packageReferences = (
-				B241049724320B4400C36DB9 /* XCRemoteSwiftPackageReference "swift-format" */,
+				B2EE33FF25223D04007BBD6F /* XCRemoteSwiftPackageReference "swift-format" */,
 			);
 			productRefGroup = B26912132431ED5E00B3482B /* Products */;
 			projectDirPath = "";
@@ -918,35 +918,35 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B241049724320B4400C36DB9 /* XCRemoteSwiftPackageReference "swift-format" */ = {
+		B2EE33FF25223D04007BBD6F /* XCRemoteSwiftPackageReference "swift-format" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-format";
 			requirement = {
-				branch = master;
+				branch = "swift-5.3-branch";
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B241049824320B4400C36DB9 /* SwiftFormat */ = {
+		B2EE340025223D04007BBD6F /* SwiftFormat */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B241049724320B4400C36DB9 /* XCRemoteSwiftPackageReference "swift-format" */;
+			package = B2EE33FF25223D04007BBD6F /* XCRemoteSwiftPackageReference "swift-format" */;
 			productName = SwiftFormat;
 		};
-		B241049A24320B4400C36DB9 /* SwiftFormatConfiguration */ = {
+		B2EE340225223D04007BBD6F /* SwiftFormatConfiguration */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B241049724320B4400C36DB9 /* XCRemoteSwiftPackageReference "swift-format" */;
+			package = B2EE33FF25223D04007BBD6F /* XCRemoteSwiftPackageReference "swift-format" */;
 			productName = SwiftFormatConfiguration;
 		};
-		B29C1509243490C2007A6F1F /* SwiftFormat */ = {
+		B2EE340625223DBB007BBD6F /* SwiftFormat */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B241049724320B4400C36DB9 /* XCRemoteSwiftPackageReference "swift-format" */;
+			package = B2EE33FF25223D04007BBD6F /* XCRemoteSwiftPackageReference "swift-format" */;
 			productName = SwiftFormat;
 		};
-		B29C150B243490C2007A6F1F /* SwiftFormatConfiguration */ = {
+		B2EE340825223DBB007BBD6F /* SwiftFormatConfiguration */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B241049724320B4400C36DB9 /* XCRemoteSwiftPackageReference "swift-format" */;
+			package = B2EE33FF25223D04007BBD6F /* XCRemoteSwiftPackageReference "swift-format" */;
 			productName = SwiftFormatConfiguration;
 		};
 /* End XCSwiftPackageProductDependency section */
