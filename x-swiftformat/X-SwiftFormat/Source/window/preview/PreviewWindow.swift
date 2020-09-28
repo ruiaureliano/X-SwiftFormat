@@ -71,9 +71,20 @@ class PreviewWindow: NSWindow {
 				self.previewEditor.string = output
 			}
 		} catch {
+			var informativeText = error.localizedDescription
+			if let swiftFormatError = error as? SwiftFormatError {
+				switch swiftFormatError {
+				case .fileNotReadable:
+					informativeText = "The requested file was not readable or it did not exist."
+				case .isDirectory:
+					informativeText = "The requested file was a directory."
+				case .fileContainsInvalidSyntax(let position):
+					informativeText = "The file contains invalid or unrecognized Swift syntax and cannot be handled safely. (Position: \(position.utf8Offset))"
+				}
+			}
 			let alert = NSAlert()
 			alert.messageText = "Error"
-			alert.informativeText = error.localizedDescription
+			alert.informativeText = informativeText
 			alert.alertStyle = .critical
 			alert.addButton(withTitle: "OK")
 			alert.beginSheetModal(for: self) { (_) in

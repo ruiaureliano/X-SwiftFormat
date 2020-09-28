@@ -30,7 +30,7 @@ class PreviewEditorSyntax: NSObject {
 		"as", "associatedtype", "break", "case", "catch", "class", "continue", "convenience", "default", "defer", "deinit", "else", "enum", "extension", "fallthrough",
 		"false", "fileprivate", "final", "for", "func", "get", "guard", "if", "import", "in", "init", "inout", "internal", "is", "lazy", "let", "mutating", "nil",
 		"nonmutating", "open", "operator", "override", "private", "protocol", "public", "repeat", "required", "rethrows", "return", "required", "self",
-		"set", "static", "struct", "subscript", "super", "switch", "throw", "throws", "true", "try", "typealias", "unowned", "var", "weak", "where", "while"
+		"set", "static", "struct", "subscript", "super", "switch", "throw", "throws", "true", "try", "typealias", "unowned", "var", "weak", "where", "while",
 	]
 
 	private let stdlibIdentifiers = [
@@ -45,7 +45,7 @@ class PreviewEditorSyntax: NSObject {
 		"Printable", "ReverseRandomAccessIndex", "SequenceOf", "SinkOf", "Slice", "StaticString", "StrideThrough", "StrideThroughGenerator", "StrideTo",
 		"StrideToGenerator", "String", "Index", "UTF8View", "Index", "UnicodeScalarView", "IndexType", "GeneratorType", "UTF16View", "UInt", "UInt16", "UInt32",
 		"UInt64", "UInt8", "UTF16", "UTF32", "UTF8", "UnicodeDecodingResult", "UnicodeScalar", "Unmanaged", "UnsafeArray", "UnsafeArrayGenerator",
-		"UnsafeMutableArray", "UnsafePointer", "VaListBuilder", "Header", "Zip2", "ZipGenerator2"
+		"UnsafeMutableArray", "UnsafePointer", "VaListBuilder", "Header", "Zip2", "ZipGenerator2",
 	]
 
 	func hightlightSource(text: String, in textView: NSTextView) {

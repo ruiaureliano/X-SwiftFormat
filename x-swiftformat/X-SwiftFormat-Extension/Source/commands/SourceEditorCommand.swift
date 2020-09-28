@@ -11,15 +11,13 @@ import SwiftFormat
 import SwiftFormatConfiguration
 import XcodeKit
 
-private let kErrorNotSwift = NSError(domain: "Not a Swift file", code: -1001, userInfo: nil)
-
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 	let supportedUTIs = [
 		"public.swift-source",
 		"com.apple.dt.playground",
 		"com.apple.dt.playgroundpage",
-		"com.apple.dt.swiftpm-package-manifest"
+		"com.apple.dt.swiftpm-package-manifest",
 	]
 
 	func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
@@ -28,11 +26,23 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 		if supportedUTIs.contains(uti) {
 			formatBuffer(with: invocation) { error in
 				DispatchQueue.main.async {
-					completionHandler(error)
+					if let swiftFormatError = error as? SwiftFormatError {
+						switch swiftFormatError {
+						case .fileNotReadable:
+							completionHandler(NSError(domain: "The requested file was not readable or it did not exist.", code: -1002, userInfo: nil) as Error)
+						case .isDirectory:
+							completionHandler(NSError(domain: "The requested file was a directory.", code: -1003, userInfo: nil) as Error)
+						case .fileContainsInvalidSyntax(let position):
+							completionHandler(
+								NSError(domain: "The file contains invalid or unrecognized Swift syntax and cannot be handled safely. (Position: \(position.utf8Offset))", code: -1004, userInfo: nil) as Error)
+						}
+					} else {
+						completionHandler(error)
+					}
 				}
 			}
 		} else {
-			completionHandler(kErrorNotSwift as Error)
+			completionHandler(NSError(domain: "Not a Swift file", code: -1001, userInfo: nil) as Error)
 		}
 	}
 

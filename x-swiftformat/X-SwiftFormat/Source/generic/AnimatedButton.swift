@@ -25,11 +25,14 @@ class AnimatedButton: NSButton {
 		super.awakeFromNib()
 		self.alphaValue = alphaNormal
 
-		self.addTrackingArea(NSTrackingArea(rect: self.frame, options: [
-				.mouseEnteredAndExited,
-				.activeAlways,
-				.inVisibleRect
-			], owner: self, userInfo: nil))
+		self.addTrackingArea(
+			NSTrackingArea(
+				rect: self.frame,
+				options: [
+					.mouseEnteredAndExited,
+					.activeAlways,
+					.inVisibleRect,
+				], owner: self, userInfo: nil))
 	}
 
 	convenience init() {
@@ -42,11 +45,14 @@ class AnimatedButton: NSButton {
 		self.isBordered = false
 		self.setButtonType(NSButton.ButtonType.momentaryPushIn)
 		self.bezelStyle = .roundRect
-		self.addTrackingArea(NSTrackingArea(rect: self.frame, options: [
-				.mouseEnteredAndExited,
-				.activeAlways,
-				.inVisibleRect
-			], owner: self, userInfo: nil))
+		self.addTrackingArea(
+			NSTrackingArea(
+				rect: self.frame,
+				options: [
+					.mouseEnteredAndExited,
+					.activeAlways,
+					.inVisibleRect,
+				], owner: self, userInfo: nil))
 	}
 
 	required init?(coder: NSCoder) {

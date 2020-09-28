@@ -24,7 +24,6 @@ extension AppDelegate {
 		dialog.allowedFileTypes = [XSFDocType.swiftformat.rawValue]
 		if dialog.runModal() == .OK {
 			for url in dialog.urls {
-				debugPrint(url.pathExtension.lowercased())
 				if let docType = XSFDocType(rawValue: url.pathExtension.lowercased()) {
 					switch docType {
 					case .swiftformat:

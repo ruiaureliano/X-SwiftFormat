@@ -45,7 +45,7 @@ class Config: NSObject {
 		"UseSingleLinePropertyGetter": true,
 		"UseSynthesizedInitializer": true,
 		"UseTripleSlashForDocumentationComments": true,
-		"ValidateDocumentationComments": true
+		"ValidateDocumentationComments": true,
 	]
 
 	static let configuration: [[String: Any]] = [
@@ -55,56 +55,65 @@ class Config: NSObject {
 			"value": 1,
 			"max": 100,
 			"min": 1,
-			"increment": 1
-		], [
+			"increment": 1,
+		],
+		[
 			"type": "number",
 			"key": "lineLength",
 			"value": 100,
 			"max": 1000,
 			"min": 1,
-			"increment": 10
-		], [
+			"increment": 10,
+		],
+		[
 			"type": "number",
 			"key": "tabWidth",
 			"value": 8,
 			"max": 100,
 			"min": 1,
-			"increment": 1
-		], [
+			"increment": 1,
+		],
+		[
 			"type": "object",
 			"key": "indentation",
 			"options": [
 				"spaces",
-				"tabs"
+				"tabs",
 			],
 			"value": 2,
 			"max": 100,
 			"min": 1,
-			"increment": 1
-		], [
+			"increment": 1,
+		],
+		[
 			"type": "boolean",
 			"key": "respectsExistingLineBreaks",
-			"value": true
-		], [
+			"value": true,
+		],
+		[
 			"type": "boolean",
 			"key": "lineBreakBeforeControlFlowKeywords",
-			"value": false
-		], [
+			"value": false,
+		],
+		[
 			"type": "boolean",
 			"key": "lineBreakBeforeEachArgument",
-			"value": false
-		], [
+			"value": false,
+		],
+		[
 			"type": "boolean",
 			"key": "lineBreakBeforeEachGenericRequirement",
-			"value": false
-		], [
+			"value": false,
+		],
+		[
 			"type": "boolean",
 			"key": "prioritizeKeepingFunctionOutputTogether",
-			"value": false
-		], [
+			"value": false,
+		],
+		[
 			"type": "boolean",
 			"key": "indentConditionalCompilationBlocks",
-			"value": true
-		]
+			"value": true,
+		],
 	]
 }
