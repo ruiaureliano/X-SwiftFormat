@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>X-SwiftFormat</string>
+	<string>X-SwiftFormat (v$(MARKETING_VERSION))</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
@@ -34,7 +34,7 @@
 					<key>XCSourceEditorCommandIdentifier</key>
 					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SourceEditorCommand</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Format Swift Code (v$(MARKETING_VERSION))</string>
+					<string>Format Swift Code</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>

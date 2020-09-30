@@ -21,7 +21,6 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 	]
 
 	func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
-
 		let uti = invocation.buffer.contentUTI
 		if supportedUTIs.contains(uti) {
 			formatBuffer(with: invocation) { error in
@@ -49,15 +48,8 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 	private func formatBuffer(with invocation: XCSourceEditorCommandInvocation, completion: @escaping (_ error: Error?) -> Void) {
 		DispatchQueue.global(qos: .background).async {
 
-			var sharedConfiguration = UserDefaults.configuration
-			var sharedRules = UserDefaults.rules
-			if var config = self.lookForSwiftFormat(path: #file) {
-				if let rules = config["rules"] as? [String: Bool] {
-					sharedRules = rules
-					config.removeValue(forKey: "rules")
-				}
-				sharedConfiguration = config
-			}
+			let sharedConfiguration = UserDefaults.configuration
+			let sharedRules = UserDefaults.rules
 
 			var configuration = Configuration.buildConfiguration(with: sharedConfiguration)
 			for rule in sharedRules {
@@ -79,34 +71,5 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 				completion(error)
 			}
 		}
-	}
-
-	private func lookForSwiftFormat(path: NSString) -> [String: Any]? {
-		let newPath = path.deletingLastPathComponent
-		if newPath != "/" {
-			do {
-				let files = try FileManager.default.contentsOfDirectory(atPath: newPath)
-				var foundSwiftFormatFile = false
-				var foundXCodeProjFile = false
-				var foundSwiftFormatFilePath = ""
-				for file in files {
-					if file == ".swift-format" {
-						foundSwiftFormatFile = true
-						foundSwiftFormatFilePath = "\(newPath)/.swift-format"
-					}
-					if file.contains(".xcodeproj") {
-						foundXCodeProjFile = true
-					}
-					if foundSwiftFormatFile && foundXCodeProjFile {
-						if let data = FileManager.default.contents(atPath: foundSwiftFormatFilePath), let json = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String: Any] {
-							return json
-						}
-					}
-				}
-				return lookForSwiftFormat(path: newPath as NSString)
-			} catch {
-			}
-		}
-		return nil
 	}
 }
