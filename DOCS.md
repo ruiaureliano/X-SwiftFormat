@@ -49,20 +49,6 @@ Using those rules, imports will not be sorted, the block `[17-23]` will not be f
 
 ![](./assets/docs/8.png)
 
-**9)** Override SwiftFormat Configuration and Rules
-
-if you want to override configuration and rules you need to create a `.swift-format`file and put it at the same level as your `.xcodeproj`. This will override your configuration and rules only for this project.
-
-```json
-{
-  "lineLength": 300,
-  "indentation": {
-    "tabs": 1
-  }
-}
-```
-![](./assets/docs/9.png)
-
 ---
 
 I'm [Rui Aureliano](http://ruiaureliano.com), iOS and macOS Engineer at [Olá Brothers](https://theolabrothers.com). We make [Sip](https://sipapp.io) 🤓
