@@ -455,7 +455,6 @@
 				B24104A024320CAE00C36DB9 /* Embed Libraries */,
 				B29C150124348F4B007A6F1F /* Embed App Extensions */,
 				B26912232431ED7000B3482B /* Run Script (SwiftLint) */,
-				B2EE33ED25223938007BBD6F /* Run Script (SwiftFormat) */,
 			);
 			buildRules = (
 			);
@@ -572,24 +571,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n\tswiftlint\nelse\n\techo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		B2EE33ED25223938007BBD6F /* Run Script (SwiftFormat) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script (SwiftFormat)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swift-format >/dev/null; then\n    if [[ $CONFIGURATION == \"Release\" ]]; then\n        swift-format -r -i $SRCROOT/X-SwiftFormat/Source --configuration $SRCROOT/.swift-format\n        swift-format -r -i $SRCROOT/X-SwiftFormat-Extension/Source --configuration $SRCROOT/.swift-format\n    fi\nelse\n    echo \"warning: swift-format not installed, download from https://github.com/apple/swift-format\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
