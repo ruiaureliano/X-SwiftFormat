@@ -42,7 +42,7 @@ import Cocoa
 			appName.stringValue = executable
 		}
 
-		versionButton.title = kSwiftFormatName
+		versionButton.title = " \(kSwiftFormatName)"
 
 		if let contentView = window.contentView {
 			effectiveAppearanceObservation = contentView.observe(\.effectiveAppearance) { [weak self] _, _ in
