@@ -1,11 +1,11 @@
-# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-eb3d33.svg)](https://swift.org/blog/swift-5-2-released/) [![](https://img.shields.io/badge/docs-1.0-eb3d33.svg)](./DOCS.md)
+# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/MIT-License-eb3d33.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-eb3d33.svg)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.0.5-eb3d33.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
 # Installation
 - Download from GitHub
 
-  <a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.2/x-swiftformat_1.0.2.zip"><img src="./assets/readme/xsf_available_github.png" alt="github" width="175" height="50"></a>
+  <a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.5/x-swiftformat_1.0.5.zip"><img src="./assets/readme/xsf_available_github.png" alt="github" width="175" height="50"></a>
 
 - Using Homebrew
 
