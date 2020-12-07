@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B29C14F324348F4B007A6F1F"
+               BlueprintIdentifier = "B2C2F71825790AF600330860"
                BuildableName = "X-SwiftFormat-Extension.appex"
                BlueprintName = "X-SwiftFormat-Extension"
                ReferencedContainer = "container:X-SwiftFormat.xcodeproj">
@@ -29,7 +29,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B26912112431ED5E00B3482B"
+               BlueprintIdentifier = "B2D4A82925713D18000619C3"
                BuildableName = "X-SwiftFormat.app"
                BlueprintName = "X-SwiftFormat"
                ReferencedContainer = "container:X-SwiftFormat.xcodeproj">
@@ -57,16 +57,27 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "0"
+         BundleIdentifier = "com.apple.dt.Xcode"
+         RemotePath = "/Applications/Xcode.app">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B26912112431ED5E00B3482B"
+            BlueprintIdentifier = "B2D4A82925713D18000619C3"
             BuildableName = "X-SwiftFormat.app"
             BlueprintName = "X-SwiftFormat"
             ReferencedContainer = "container:X-SwiftFormat.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = "disable"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -79,7 +90,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B26912112431ED5E00B3482B"
+            BlueprintIdentifier = "B2D4A82925713D18000619C3"
             BuildableName = "X-SwiftFormat.app"
             BlueprintName = "X-SwiftFormat"
             ReferencedContainer = "container:X-SwiftFormat.xcodeproj">

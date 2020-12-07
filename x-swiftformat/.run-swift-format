@@ -4,6 +4,6 @@ cd "$(dirname "$0")"
 
 echo "\n🟡 START FORMATING CODE\n"
 swift-format -r -i ./X-SwiftFormat/Source  --configuration ./.swift-format
-echo "   🟢 ./X-SwiftFormat/Source"
+echo "   🟢 swift-format -r -i ./X-SwiftFormat/Source  --configuration ./.swift-format\n"
 swift-format -r -i ./X-SwiftFormat-Extension/Source   --configuration ./.swift-format
-echo "   🟢 ./X-SwiftFormat-Extension/Source"
+echo "   🟢 swift-format -r -i ./X-SwiftFormat-Extension/Source   --configuration ./.swift-format\n"

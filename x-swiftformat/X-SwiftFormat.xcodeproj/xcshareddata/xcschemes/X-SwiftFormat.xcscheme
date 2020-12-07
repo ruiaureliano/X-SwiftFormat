@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B26912112431ED5E00B3482B"
+               BlueprintIdentifier = "B2D4A82925713D18000619C3"
                BuildableName = "X-SwiftFormat.app"
                BlueprintName = "X-SwiftFormat"
                ReferencedContainer = "container:X-SwiftFormat.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B26912112431ED5E00B3482B"
+            BlueprintIdentifier = "B2D4A82925713D18000619C3"
             BuildableName = "X-SwiftFormat.app"
             BlueprintName = "X-SwiftFormat"
             ReferencedContainer = "container:X-SwiftFormat.xcodeproj">
@@ -68,7 +68,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B26912112431ED5E00B3482B"
+            BlueprintIdentifier = "B2D4A82925713D18000619C3"
             BuildableName = "X-SwiftFormat.app"
             BlueprintName = "X-SwiftFormat"
             ReferencedContainer = "container:X-SwiftFormat.xcodeproj">

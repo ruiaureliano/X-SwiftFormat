@@ -1,19 +1,20 @@
-# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/MIT-License-eb3d33.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-eb3d33.svg)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.0.5-eb3d33.svg)](./DOCS.md)
+# 🛠 X-SwiftFormat 
+
+[![](https://img.shields.io/badge/MIT-License-1b71df.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-1b71df.svg?logo=swift)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.1-1b71df.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
-# Installation
-- Download from GitHub
+## Installation
 
-  <a href="https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.0.5/x-swiftformat_1.0.5.zip"><img src="./assets/readme/xsf_available_github.png" alt="github" width="175" height="50"></a>
+### Using Github
 
-- Using Homebrew
+[![](https://img.shields.io/badge/Download-1.1-1b71df.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.1/x-swiftformat_1.1.zip)
 
-  ```shell
-  brew cask install x-swiftformat
-  ```
+### Using Cask
 
-# Usage
+`brew cask install x-swiftformat`
+
+## Usage
 
 ### 1) Open X-SwiftFormat
 
@@ -21,9 +22,9 @@
 
 ![](./assets/readme/xsf_running.png)
 
-**a)** You case use the **Preview** to see the format running in the app 🦾
+**a)** You case use the **Preview** to see the format running in the app 💪
 
-![](./assets/readme/xsf_format.gif)
+![](./assets/readme/xsf_format.png)
 
 **b)** You can export a configuration file (`.swift-format`) to use later 🖥
 
@@ -102,3 +103,4 @@ Check more info here: [https://github.com/apple/swift-format](https://github.com
 I'm [Rui Aureliano](http://ruiaureliano.com), iOS and macOS Engineer at [Olá Brothers](https://theolabrothers.com). We make [Sip](https://sipapp.io) 🤓
 
 [Linkedin](https://www.linkedin.com/in/ruiaureliano) | [AngelList](https://angel.co/ruiaureliano) | [Twitter](https://twitter.com/ruiaureliano) | [Github](https://github.com/ruiaureliano) | [Medium](https://medium.com/@ruiaureliano) | [Stackoverflow](https://stackoverflow.com/users/881095/ruiaureliano)
+

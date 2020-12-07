@@ -1,4 +1,6 @@
-# 👨‍🏫 Docs [![](https://img.shields.io/badge/MIT-License-eb3d33.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-eb3d33.svg)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.0.5-eb3d33.svg)](./DOCS.md)
+# 👨‍🏫 Docs
+
+[![](https://img.shields.io/badge/MIT-License-1b71df.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-1b71df.svg?logo=swift)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.1-1b71df.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
@@ -48,6 +50,14 @@ Using those rules, imports will not be sorted, the block `[17-23]` will not be f
 **8)** This means even with no comments, imports will not be sorted.
 
 ![](./assets/docs/8.png)
+
+**9)** After version 1.1, its possible to have multiple environments, this will help if you work with multiple porjects and **multiple configurations**. Press the `(+)` and add the name you want.
+
+![](./assets/docs/9.png)
+
+**10)** You can switch between configuration using the dropdown.
+
+![](./assets/docs/10.png)
 
 ---
 

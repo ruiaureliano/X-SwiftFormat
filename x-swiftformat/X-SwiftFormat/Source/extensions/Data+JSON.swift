@@ -1,12 +1,4 @@
-//
-//  Data+JSON.swift
-//  X-SwiftFormat
-//
-//  Created by Rui Aureliano on 30/03/2020.
-//  Copyright © 2020 Rui Aureliano. All rights reserved.
-//
-
-import Cocoa
+import Foundation
 
 extension Data {
 

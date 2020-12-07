@@ -1,13 +1,19 @@
 disabled_rules:
-- identifier_name
-- type_name
-- line_length
-- trailing_comma
+  - identifier_name
+  - trailing_comma
 
 line_length:
-- 200 # warning
-- 400 # error
+  - 300 # warning
+  - 400 # error
+
+function_body_length:
+  - 80 # warning
+  - 100 # error
 
 cyclomatic_complexity:
-- 20 # warning
-- 30 # error
+  - 50 # warning
+  - 60 # error
+
+function_parameter_count:
+  - 8 # warning
+  - 10 # error

@@ -1,11 +1,3 @@
-//
-//  SourceEditorCommand.swift
-//  X-SwiftFormat-Extension
-//
-//  Created by Rui Aureliano on 01/04/2020.
-//  Copyright © 2020 Rui Aureliano. All rights reserved.
-//
-
 import Foundation
 import SwiftFormat
 import SwiftFormatConfiguration
@@ -47,24 +39,15 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 	private func formatBuffer(with invocation: XCSourceEditorCommandInvocation, completion: @escaping (_ error: Error?) -> Void) {
 		DispatchQueue.global(qos: .background).async {
-
-			let sharedConfiguration = UserDefaults.configuration
-			let sharedRules = UserDefaults.rules
-
-			var configuration = Configuration.buildConfiguration(with: sharedConfiguration)
-			for rule in sharedRules {
-				configuration.rules[rule.key] = rule.value
-			}
-
+			let sharedConfiguration = SharedConfiguration.loadConfiguration()
+			let configuration = Configuration.buildConfiguration(with: sharedConfiguration.payload)
 			let swiftFormatter = SwiftFormatter(configuration: configuration)
 			var swiftFormatOutputStream = SwiftFormatOutputStream()
 
 			do {
 				try swiftFormatter.format(source: invocation.buffer.completeBuffer, assumingFileURL: nil, to: &swiftFormatOutputStream)
-				if let output = swiftFormatOutputStream.output {
-					if invocation.buffer.completeBuffer != output {
-						invocation.buffer.completeBuffer = output
-					}
+				if let output = swiftFormatOutputStream.output, invocation.buffer.completeBuffer != output {
+					invocation.buffer.completeBuffer = output
 				}
 				completion(nil)
 			} catch {
