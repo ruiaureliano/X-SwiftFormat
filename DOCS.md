@@ -1,4 +1,4 @@
-# 🛠 X-SwiftFormat [![](https://img.shields.io/badge/license-MIT-eb3d33.svg)](https://raw.githubusercontent.com/ruiaureliano/X-SwiftFormat/master/LICENSE) [![](https://img.shields.io/badge/swift-5.3-eb3d33.svg)](https://swift.org/blog/swift-5-2-released/)
+# 👨‍🏫 Docs [![](https://img.shields.io/badge/MIT-License-eb3d33.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-eb3d33.svg)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.0.5-eb3d33.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
