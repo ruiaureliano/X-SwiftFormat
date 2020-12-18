@@ -1,6 +1,6 @@
 # 🛠 X-SwiftFormat 
 
-[![](https://img.shields.io/badge/MIT-License-1b71df.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-1b71df.svg?logo=swift)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.1-1b71df.svg)](./DOCS.md)
+[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-0f73b4.svg)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.1-0f73b4.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
@@ -8,7 +8,7 @@
 
 ### Using Github
 
-[![](https://img.shields.io/badge/Download-1.1-1b71df.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.1/x-swiftformat_1.1.zip)
+[![](https://img.shields.io/badge/Download-1.1-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.1/x-swiftformat_1.1.zip)
 
 ### Using Cask
 
