@@ -1,6 +1,6 @@
 # 🛠 X-SwiftFormat 
 
-[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-0f73b4.svg)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.1-0f73b4.svg)](./DOCS.md)
+[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.4-0f73b4.svg)](https://swift.org/blog/swift-5-4-released/) [![](https://img.shields.io/badge/docs-1.1-0f73b4.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
@@ -8,7 +8,7 @@
 
 ### Using Github
 
-[![](https://img.shields.io/badge/Download-1.1-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.1/x-swiftformat_1.1.zip)
+[![](https://img.shields.io/badge/Download-1.1.1-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.1.1/x-swiftformat_1.1.1.zip)
 
 ### Using Cask
 
@@ -51,10 +51,10 @@ Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts
 # Installing [Apple Swift Format](https://github.com/apple/swift-format) (Xcode or Mint)
 
 ## a) Using Xcode
-if you are using **Xcode 12 (Swift 5.3)**, you can check out and build swift-format using the following commands:
+if you are using **Xcode 12 (Swift 5.4)**, you can check out and build swift-format using the following commands:
 
 ```
-git clone -b swift-5.3-branch https://github.com/apple/swift-format.git
+git clone -b swift-5.4-branch https://github.com/apple/swift-format.git
 cd swift-format
 swift build
 ```
@@ -70,15 +70,15 @@ If you dint have **Homebrew**, install [here](https://brew.sh)
 
 ```
 brew install mint
-mint install apple/swift-format@swift-5.3-branch
+mint install apple/swift-format@swift-5.4-branch
 ```
 You should see this
 ```
-🌱 Cloning swift-format swift-5.3-branch
+🌱 Cloning swift-format swift-5.4-branch
 🌱 Resolving package
 🌱 Building package
-🌱 Installed swift-format swift-5.3-branch
-🌱 Linked swift-format swift-5.3-branch to /usr/local/bin
+🌱 Installed swift-format swift-5.4-branch
+🌱 Linked swift-format swift-5.4-branch to /usr/local/bin
 ```
 👍👍👍
 

@@ -1,6 +1,6 @@
 # 👨‍🏫 Docs
 
-[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.3-0f73b4.svg)](https://swift.org/blog/swift-5-3-released/) [![](https://img.shields.io/badge/docs-1.1-0f73b4.svg)](./DOCS.md)
+[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.4-0f73b4.svg)](https://swift.org/blog/swift-5-4-released/) [![](https://img.shields.io/badge/docs-1.1.1-0f73b4.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 

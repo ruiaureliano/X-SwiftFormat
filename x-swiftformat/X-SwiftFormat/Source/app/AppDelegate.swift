@@ -1,5 +1,7 @@
 import Cocoa
 
+var sherlog = Sherlog.self
+
 @main class AppDelegate: NSObject, NSApplicationDelegate {
 
 	func applicationDidFinishLaunching(_ notification: Notification) {

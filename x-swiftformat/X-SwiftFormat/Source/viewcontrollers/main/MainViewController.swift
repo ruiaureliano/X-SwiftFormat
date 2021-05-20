@@ -75,6 +75,10 @@ class MainViewController: NSViewController {
 		super.viewDidAppear()
 		guard let window = self.view.window else { return }
 		window.isMovableByWindowBackground = true
+
+		if SponsorsViewController.showSponsorWindow() {
+			self.performSegue(withIdentifier: NSStoryboardSegue.Identifier("MAIN_TO_SPONSORS"), sender: nil)
+		}
 	}
 
 	private func checkUpdates() {

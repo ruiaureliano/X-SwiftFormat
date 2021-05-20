@@ -12,6 +12,8 @@
 		B2254FC72574045C00FA859E /* String+ReverseCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2254FC62574045C00FA859E /* String+ReverseCamel.swift */; };
 		B2506F922574E15600712630 /* CellNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2506F912574E15600712630 /* CellNumberView.swift */; };
 		B2506F952574E4E900712630 /* CellObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2506F942574E4E900712630 /* CellObjectView.swift */; };
+		B2513F5B265691360020DFE1 /* Sherlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2513F5A265691360020DFE1 /* Sherlog.swift */; };
+		B2513F5E265693780020DFE1 /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2513F5D265693780020DFE1 /* SponsorsViewController.swift */; };
 		B258D13A257276FB00CA4BA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258D127257276FB00CA4BA2 /* AppDelegate.swift */; };
 		B258D13B257276FB00CA4BA2 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258D129257276FB00CA4BA2 /* Notifications.swift */; };
 		B258D13C257276FB00CA4BA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258D12B257276FB00CA4BA2 /* Constants.swift */; };
@@ -46,7 +48,6 @@
 		B2A23270257802E000BF41AB /* XSFDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A2326F257802E000BF41AB /* XSFDoc.swift */; };
 		B2A23272257802F700BF41AB /* XSFDocHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A23271257802F700BF41AB /* XSFDocHandler.swift */; };
 		B2C2F71B25790AF600330860 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C2F71A25790AF600330860 /* Cocoa.framework */; };
-		B2C2F71D25790AF600330860 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C2F71C25790AF600330860 /* XcodeKit.framework */; };
 		B2C2F72725790AF600330860 /* X-SwiftFormat-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2C2F71925790AF600330860 /* X-SwiftFormat-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B2C2F72E25790B8900330860 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C2F72D25790B8900330860 /* XcodeKit.framework */; };
 		B2C2F72F25790B8900330860 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2C2F72D25790B8900330860 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -118,6 +119,8 @@
 		B2254FC62574045C00FA859E /* String+ReverseCamel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReverseCamel.swift"; sourceTree = "<group>"; };
 		B2506F912574E15600712630 /* CellNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNumberView.swift; sourceTree = "<group>"; };
 		B2506F942574E4E900712630 /* CellObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellObjectView.swift; sourceTree = "<group>"; };
+		B2513F5A265691360020DFE1 /* Sherlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sherlog.swift; sourceTree = "<group>"; };
+		B2513F5D265693780020DFE1 /* SponsorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		B258D127257276FB00CA4BA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B258D129257276FB00CA4BA2 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		B258D12B257276FB00CA4BA2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -173,7 +176,6 @@
 				B2C2F74225790C9900330860 /* SwiftFormat in Frameworks */,
 				B2C2F71B25790AF600330860 /* Cocoa.framework in Frameworks */,
 				B2C2F74425790C9900330860 /* SwiftFormatConfiguration in Frameworks */,
-				B2C2F71D25790AF600330860 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +202,26 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		B2513F592656912A0020DFE1 /* sherlog */ = {
+			isa = PBXGroup;
+			children = (
+				B2513F5A265691360020DFE1 /* Sherlog.swift */,
+			);
+			path = sherlog;
+			sourceTree = "<group>";
+		};
+		B2513F5C2656935A0020DFE1 /* sponsors */ = {
+			isa = PBXGroup;
+			children = (
+				B2513F5D265693780020DFE1 /* SponsorsViewController.swift */,
+			);
+			path = sponsors;
+			sourceTree = "<group>";
+		};
 		B258D125257276FB00CA4BA2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				B2513F592656912A0020DFE1 /* sherlog */,
 				B2A2326E257802CA00BF41AB /* doc */,
 				B2A232672577FD2900BF41AB /* output */,
 				B2B8159C2572A83300CD7510 /* configuration */,
@@ -258,6 +277,7 @@
 		B258D131257276FB00CA4BA2 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				B2513F5C2656935A0020DFE1 /* sponsors */,
 				B285D8B12577EA5000A1B17E /* preview */,
 				B258D132257276FB00CA4BA2 /* about */,
 				B258D135257276FB00CA4BA2 /* main */,
@@ -505,7 +525,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					B2C2F71825790AF600330860 = {
 						CreatedOnToolsVersion = 12.2;
@@ -616,9 +636,11 @@
 				B2A232662577FB1A00BF41AB /* PreviewViewController+Actions.swift in Sources */,
 				B2A23270257802E000BF41AB /* XSFDoc.swift in Sources */,
 				B278B3F22576690000E9BE4A /* SharedConfiguration.swift in Sources */,
+				B2513F5B265691360020DFE1 /* Sherlog.swift in Sources */,
 				B278B3FA2576735B00E9BE4A /* SharedConfiguration+Keys.swift in Sources */,
 				B2A23272257802F700BF41AB /* XSFDocHandler.swift in Sources */,
 				B2A2326D2578027E00BF41AB /* AppDelegate+Menu.swift in Sources */,
+				B2513F5E265693780020DFE1 /* SponsorsViewController.swift in Sources */,
 				B258D13E257276FB00CA4BA2 /* NSButton+Tint.swift in Sources */,
 				B258D142257276FB00CA4BA2 /* AboutViewController+Actions.swift in Sources */,
 				B2254FC72574045C00FA859E /* String+ReverseCamel.swift in Sources */,
@@ -662,9 +684,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "X-SwiftFormat-Extension/XSwiftFormatExtension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 201207;
+				CURRENT_PROJECT_VERSION = 210520;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat-Extension/Info.plist";
@@ -674,7 +697,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -686,9 +709,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "X-SwiftFormat-Extension/XSwiftFormatExtension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 201207;
+				CURRENT_PROJECT_VERSION = 210520;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat-Extension/Info.plist";
@@ -698,7 +722,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -828,9 +852,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "X-SwiftFormat/XSwiftFormat.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 201207;
+				CURRENT_PROJECT_VERSION = 210520;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat/Info.plist";
@@ -843,7 +868,7 @@
 					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -857,9 +882,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "X-SwiftFormat/XSwiftFormat.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 201207;
+				CURRENT_PROJECT_VERSION = 210520;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat/Info.plist";
@@ -872,7 +898,7 @@
 					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -916,7 +942,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-format";
 			requirement = {
-				branch = "swift-5.3-branch";
+				branch = "swift-5.4-branch";
 				kind = branch;
 			};
 		};
