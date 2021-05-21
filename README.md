@@ -12,7 +12,7 @@
 
 ### Using Cask
 
-`brew cask install x-swiftformat`
+`brew install --cask x-swiftformat`
 
 ## Usage
 
