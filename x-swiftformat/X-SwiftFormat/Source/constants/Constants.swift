@@ -4,19 +4,19 @@ import Cocoa
  * swift-format https://github.com/apple/swift-format
  */
 
-let kSwiftFormatVersion = "5.4"
-let kSwiftFormatName = "swift-format 5.4"
+let kSwiftFormatVersion = "5.5"
+let kSwiftFormatName = "swift-format 5.5"
 let kSwiftFormatDescription = "Formatting technology for Swift source code"
-let kSwiftFormatURL = "https://github.com/apple/swift-format/tree/swift-5.4-branch"
+let kSwiftFormatURL = "https://github.com/apple/swift-format/tree/swift-5.5-branch"
 
 /*
  * swift-syntax https://github.com/apple/swift-syntax
  */
 
-let kSwiftSyntaxVersion = "5.4"
-let kSwiftSyntaxName = "swift-syntax 5.4"
+let kSwiftSyntaxVersion = "5.5"
+let kSwiftSyntaxName = "swift-syntax 5.5"
 let kSwiftSyntaxDescription = "SwiftPM package for SwiftSyntax library."
-let kSwiftSyntaxURL = "https://github.com/apple/swift-syntax/tree/release/5.4"
+let kSwiftSyntaxURL = "https://github.com/apple/swift-syntax/tree/release/5.5"
 
 /*
  * X-SwiftFormat https://github.com/ruiaureliano/X-SwiftFormat
