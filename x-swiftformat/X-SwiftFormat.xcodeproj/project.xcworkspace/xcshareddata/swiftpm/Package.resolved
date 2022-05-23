@@ -1,34 +1,50 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "swift-argument-parser",
-        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
-        "state": {
-          "branch": null,
-          "revision": "d2930e8fcf9c33162b9fcc1d522bc975e2d4179b",
-          "version": "1.0.1"
-        }
-      },
-      {
-        "package": "swift-format",
-        "repositoryURL": "https://github.com/apple/swift-format",
-        "state": {
-          "branch": "swift-5.5-branch",
-          "revision": "f872223e16742fd97fabd319fbf4a939230cc796",
-          "version": null
-        }
-      },
-      {
-        "package": "SwiftSyntax",
-        "repositoryURL": "https://github.com/apple/swift-syntax",
-        "state": {
-          "branch": null,
-          "revision": "75e60475d9d8fd5bbc16a12e0eaa2cb01b0c322e",
-          "version": "0.50500.0"
-        }
+  "pins" : [
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "f3c9084a71ef4376f2fabbdf1d3d90a49f1fabdb",
+        "version" : "1.1.2"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swift-format",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-format",
+      "state" : {
+        "branch" : "release/5.6",
+        "revision" : "e6b8c60c7671066d229e30efa1e31acf57be412e"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax",
+      "state" : {
+        "revision" : "0b6c22b97f8e9320bca62e82cdbee601cf37ad3f",
+        "version" : "0.50600.1"
+      }
+    },
+    {
+      "identity" : "swift-system",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-system.git",
+      "state" : {
+        "revision" : "836bc4557b74fe6d2660218d56e3ce96aff76574",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "swift-tools-support-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-tools-support-core.git",
+      "state" : {
+        "revision" : "b7667f3e266af621e5cc9c77e74cacd8e8c00cb4",
+        "version" : "0.2.5"
+      }
+    }
+  ],
+  "version" : 2
 }

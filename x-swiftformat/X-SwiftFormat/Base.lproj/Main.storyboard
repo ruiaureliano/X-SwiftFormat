@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -604,7 +604,7 @@ All rights reserved.</string>
                                             <rect key="frame" x="28" y="28" width="49" height="47"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="☕️" id="sky-TZ-iyl">
-                                                <font key="font" size="40" name=".AppleColorEmojiUI"/>
+                                                <font key="font" metaFont="system" size="40"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1028,7 +1028,7 @@ All rights reserved.</string>
                                                                                             <outlet property="valueField" destination="fV8-kW-9hg" id="eSd-8x-khr"/>
                                                                                         </connections>
                                                                                     </customView>
-                                                                                    <customView identifier="CellObjectView" id="0zF-Na-66S" userLabel="OBJECT VIEW" customClass="CellObjectView" customModule="X_SwiftFormat" customModuleProvider="target">
+                                                                                    <customView identifier="CellComboNumView" id="0zF-Na-66S" userLabel="OBJECT VIEW" customClass="CellComboNumView" customModule="X_SwiftFormat" customModuleProvider="target">
                                                                                         <rect key="frame" x="0.0" y="56" width="459" height="28"/>
                                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                                         <subviews>
@@ -1107,6 +1107,56 @@ All rights reserved.</string>
                                                                                             <outlet property="popupField" destination="xpC-Ub-kFi" id="QIV-UY-vqb"/>
                                                                                             <outlet property="stepperField" destination="MO9-aU-A2n" id="8fc-nc-41F"/>
                                                                                             <outlet property="valueField" destination="1r7-Vm-Rh7" id="KxK-ZI-uaM"/>
+                                                                                        </connections>
+                                                                                    </customView>
+                                                                                    <customView identifier="CellComboView" id="XMZ-3A-q5X" userLabel="COMBO VIEW" customClass="CellComboView" customModule="X_SwiftFormat" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="84" width="459" height="28"/>
+                                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                                        <subviews>
+                                                                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fpg-fX-yFE" userLabel="CHECK">
+                                                                                                <rect key="frame" x="5" y="5" width="367" height="18"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="height" constant="16" id="Vso-5t-KGx"/>
+                                                                                                </constraints>
+                                                                                                <buttonCell key="cell" type="check" title="LABEL" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="08r-rY-Asj">
+                                                                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                                                    <font key="font" metaFont="systemLight" size="13"/>
+                                                                                                </buttonCell>
+                                                                                                <connections>
+                                                                                                    <action selector="labelCheckPress:" target="XMZ-3A-q5X" id="apm-4O-ujf"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qhd-wB-a82" userLabel="POPUP">
+                                                                                                <rect key="frame" x="377" y="0.0" width="82" height="25"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="width" constant="75" id="Duw-rK-f3O"/>
+                                                                                                    <constraint firstAttribute="height" constant="20" id="ZJr-uj-zSd"/>
+                                                                                                </constraints>
+                                                                                                <popUpButtonCell key="cell" type="push" title="OPT 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="jDN-dU-e36" id="idZ-8W-rkg">
+                                                                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                                                                    <font key="font" metaFont="systemLight" size="13"/>
+                                                                                                    <menu key="menu" id="J3H-nS-2BE">
+                                                                                                        <items>
+                                                                                                            <menuItem title="OPT 1" state="on" id="jDN-dU-e36"/>
+                                                                                                        </items>
+                                                                                                    </menu>
+                                                                                                </popUpButtonCell>
+                                                                                                <connections>
+                                                                                                    <action selector="popupFieldPress:" target="XMZ-3A-q5X" id="oHU-v3-C1d"/>
+                                                                                                </connections>
+                                                                                            </popUpButton>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="Fpg-fX-yFE" firstAttribute="leading" secondItem="XMZ-3A-q5X" secondAttribute="leading" constant="7" id="4SW-WN-Cne"/>
+                                                                                            <constraint firstItem="qhd-wB-a82" firstAttribute="leading" secondItem="Fpg-fX-yFE" secondAttribute="trailing" constant="8" symbolic="YES" id="8ES-8c-ziP"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="qhd-wB-a82" secondAttribute="trailing" constant="4" id="bpf-QZ-5Fu"/>
+                                                                                            <constraint firstItem="qhd-wB-a82" firstAttribute="centerY" secondItem="XMZ-3A-q5X" secondAttribute="centerY" id="mIO-kv-g4y"/>
+                                                                                            <constraint firstItem="Fpg-fX-yFE" firstAttribute="centerY" secondItem="XMZ-3A-q5X" secondAttribute="centerY" id="rXO-st-42g"/>
+                                                                                        </constraints>
+                                                                                        <connections>
+                                                                                            <outlet property="labelCheck" destination="Fpg-fX-yFE" id="JG7-On-sIR"/>
+                                                                                            <outlet property="popupField" destination="qhd-wB-a82" id="rww-99-nkq"/>
+                                                                                            <outlet property="popupFieldConstraint" destination="Duw-rK-f3O" id="sXX-Ur-LAJ"/>
                                                                                         </connections>
                                                                                     </customView>
                                                                                 </prototypeCellViews>

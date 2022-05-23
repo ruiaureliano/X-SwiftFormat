@@ -2,27 +2,25 @@ import Cocoa
 
 private let defaultEnvironment: String = "Default Environment"
 private let defaultRules: [String: Any] = [
-	"AllPublicDeclarationsHaveDocumentation": ["type": "boolean", "on": false, "value": true],
+	"AllPublicDeclarationsHaveDocumentation": ["type": "boolean", "on": false, "value": false],
 	"AlwaysUseLowerCamelCase": ["type": "boolean", "on": false, "value": true],
 	"AmbiguousTrailingClosureOverload": ["type": "boolean", "on": false, "value": true],
-	"BeginDocumentationCommentWithOneLineSummary": ["type": "boolean", "on": false, "value": true],
-	"BlankLineBetweenMembers": ["type": "boolean", "on": false, "value": true],
-	"CaseIndentLevelEqualsSwitch": ["type": "boolean", "on": false, "value": true],
+	"BeginDocumentationCommentWithOneLineSummary": ["type": "boolean", "on": false, "value": false],
 	"DoNotUseSemicolons": ["type": "boolean", "on": false, "value": true],
 	"DontRepeatTypeInStaticProperties": ["type": "boolean", "on": false, "value": true],
+	"FileScopedDeclarationPrivacy": ["type": "boolean", "on": false, "value": true],
 	"FullyIndirectEnum": ["type": "boolean", "on": false, "value": true],
 	"GroupNumericLiterals": ["type": "boolean", "on": false, "value": true],
 	"IdentifiersMustBeASCII": ["type": "boolean", "on": false, "value": true],
-	"MultiLineTrailingCommas": ["type": "boolean", "on": false, "value": true],
-	"NeverForceUnwrap": ["type": "boolean", "on": false, "value": true],
-	"NeverUseForceTry": ["type": "boolean", "on": false, "value": true],
-	"NeverUseImplicitlyUnwrappedOptionals": ["type": "boolean", "on": false, "value": true],
+	"NeverForceUnwrap": ["type": "boolean", "on": false, "value": false],
+	"NeverUseForceTry": ["type": "boolean", "on": false, "value": false],
+	"NeverUseImplicitlyUnwrappedOptionals": ["type": "boolean", "on": false, "value": false],
 	"NoAccessLevelOnExtensionDeclaration": ["type": "boolean", "on": false, "value": true],
 	"NoBlockComments": ["type": "boolean", "on": false, "value": true],
 	"NoCasesWithOnlyFallthrough": ["type": "boolean", "on": false, "value": true],
 	"NoEmptyTrailingClosureParentheses": ["type": "boolean", "on": false, "value": true],
 	"NoLabelsInCasePatterns": ["type": "boolean", "on": false, "value": true],
-	"NoLeadingUnderscores": ["type": "boolean", "on": false, "value": true],
+	"NoLeadingUnderscores": ["type": "boolean", "on": false, "value": false],
 	"NoParensAroundConditions": ["type": "boolean", "on": false, "value": true],
 	"NoVoidReturnOnFunctionSignature": ["type": "boolean", "on": false, "value": true],
 	"OneCasePerLine": ["type": "boolean", "on": false, "value": true],
@@ -30,25 +28,30 @@ private let defaultRules: [String: Any] = [
 	"OnlyOneTrailingClosureArgument": ["type": "boolean", "on": false, "value": true],
 	"OrderedImports": ["type": "boolean", "on": false, "value": true],
 	"ReturnVoidInsteadOfEmptyTuple": ["type": "boolean", "on": false, "value": true],
-	"UseEnumForNamespacing": ["type": "boolean", "on": false, "value": true],
+	"UseEarlyExits": ["type": "boolean", "on": false, "value": false],
 	"UseLetInEveryBoundCaseVariable": ["type": "boolean", "on": false, "value": true],
 	"UseShorthandTypeNames": ["type": "boolean", "on": false, "value": true],
 	"UseSingleLinePropertyGetter": ["type": "boolean", "on": false, "value": true],
 	"UseSynthesizedInitializer": ["type": "boolean", "on": false, "value": true],
 	"UseTripleSlashForDocumentationComments": ["type": "boolean", "on": false, "value": true],
-	"ValidateDocumentationComments": ["type": "boolean", "on": false, "value": true],
+	"UseWhereClausesInForLoops": ["type": "boolean", "on": false, "value": false],
+	"ValidateDocumentationComments": ["type": "boolean", "on": false, "value": false],
 ]
+
 private let defaultConfiguration: [String: Any] = [
 	"maximumBlankLines": ["type": "number", "on": false, "key": "maximumBlankLines", "value": 1, "max": 100, "min": 1, "increment": 1],
 	"lineLength": ["type": "number", "on": false, "key": "lineLength", "value": 100, "max": 1000, "min": 1, "increment": 10],
 	"tabWidth": ["type": "number", "on": false, "key": "tabWidth", "value": 8, "max": 100, "min": 1, "increment": 1],
-	"indentation": ["type": "object", "on": false, "key": "indentation", "labels": ["spaces", "tabs"], "label": "space", "value": 2, "max": 100, "min": 1, "increment": 1],
+	"indentation": ["type": "combo_num", "on": false, "key": "indentation", "labels": ["spaces", "tabs"], "label": "space", "value": 2, "max": 100, "min": 1, "increment": 1],
 	"respectsExistingLineBreaks": ["type": "boolean", "on": false, "key": "respectsExistingLineBreaks", "value": true],
 	"lineBreakBeforeControlFlowKeywords": ["type": "boolean", "on": false, "key": "lineBreakBeforeControlFlowKeywords", "value": false],
 	"lineBreakBeforeEachArgument": ["type": "boolean", "on": false, "key": "lineBreakBeforeEachArgument", "value": false],
 	"lineBreakBeforeEachGenericRequirement": ["type": "boolean", "on": false, "key": "lineBreakBeforeEachGenericRequirement", "value": false],
 	"prioritizeKeepingFunctionOutputTogether": ["type": "boolean", "on": false, "key": "prioritizeKeepingFunctionOutputTogether", "value": false],
 	"indentConditionalCompilationBlocks": ["type": "boolean", "on": false, "key": "indentConditionalCompilationBlocks", "value": true],
+	"lineBreakAroundMultilineExpressionChainComponents": ["type": "boolean", "on": false, "key": "lineBreakAroundMultilineExpressionChainComponents", "value": false],
+	"fileScopedDeclarationPrivacy": ["type": "combo", "on": false, "key": "fileScopedDeclarationPrivacy", "labels": ["private", "fileprivate"], "value": "private"],
+	"indentSwitchCaseLabels": ["type": "boolean", "on": false, "key": "indentSwitchCaseLabels", "value": false],
 	"rules": defaultRules,
 ]
 
@@ -132,9 +135,13 @@ class SharedConfiguration: NSObject {
 					if let on = value["on"] as? Bool, let value = value["value"] as? Int, on {
 						config[key] = value
 					}
-				} else if type == "object" {
+				} else if type == "combo_num" {
 					if let on = value["on"] as? Bool, let label = value["label"] as? String, let value = value["value"] as? Int, on {
 						config[key] = [label: value]
+					}
+				} else if type == "combo" {
+					if let on = value["on"] as? Bool, let value = value["value"] as? String, on {
+						config[key] = value
 					}
 				}
 			}

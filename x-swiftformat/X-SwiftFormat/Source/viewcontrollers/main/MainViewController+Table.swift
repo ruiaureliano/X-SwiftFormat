@@ -36,12 +36,19 @@ extension MainViewController: NSTableViewDataSource, NSTableViewDelegate {
 						}
 						return cell
 					}
-				} else if type == "object" {
-					if let cell = tableView.makeView(withIdentifier: CellObjectView.identifier, owner: self) as? CellObjectView {
+				} else if type == "combo_num" {
+					if let cell = tableView.makeView(withIdentifier: CellComboNumView.identifier, owner: self) as? CellComboNumView {
 						if let on = config["on"] as? Bool, let label = config["label"] as? String, let labels = config["labels"] as? [String], let value = config["value"] as? Int {
 							if let min = config["min"] as? Int, let max = config["max"] as? Int, let increment = config["increment"] as? Int {
 								cell.setKey(key: key, on: on, label: label, labels: labels, value: value, min: min, max: max, increment: increment, sharedConfiguration: sharedConfiguration)
 							}
+						}
+						return cell
+					}
+				} else if type == "combo" {
+					if let cell = tableView.makeView(withIdentifier: CellComboView.identifier, owner: self) as? CellComboView {
+						if let on = config["on"] as? Bool, let value = config["value"] as? String, let labels = config["labels"] as? [String] {
+							cell.setKey(key: key, on: on, labels: labels, value: value, sharedConfiguration: sharedConfiguration)
 						}
 						return cell
 					}

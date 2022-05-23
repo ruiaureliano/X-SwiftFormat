@@ -1,7 +1,7 @@
 import Cocoa
 
 private let kUserDefaultsSharedSuiteName = "group.com.ruiaureliano.xswiftformat"
-private let kUserDefaultsSharedConfiguration = "kUserDefaultsSharedConfiguration"
+private let kUserDefaultsSharedConfiguration = "kUserDefaultsSharedConfiguration_1.2"
 
 extension SharedConfiguration {
 

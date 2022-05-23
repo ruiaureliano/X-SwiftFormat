@@ -43,6 +43,19 @@ extension Configuration {
 		if let lineBreakAroundMultilineExpressionChainComponents = payload["lineBreakAroundMultilineExpressionChainComponents"] as? Bool {
 			configuration.lineBreakAroundMultilineExpressionChainComponents = lineBreakAroundMultilineExpressionChainComponents
 		}
+		if let lineBreakAroundMultilineExpressionChainComponents = payload["lineBreakAroundMultilineExpressionChainComponents"] as? Bool {
+			configuration.lineBreakAroundMultilineExpressionChainComponents = lineBreakAroundMultilineExpressionChainComponents
+		}
+		if let fileScopedDeclarationPrivacy = payload["fileScopedDeclarationPrivacy"] as? String {
+			if fileScopedDeclarationPrivacy == "fileprivate" {
+				configuration.fileScopedDeclarationPrivacy.accessLevel = .fileprivate
+			} else {
+				configuration.fileScopedDeclarationPrivacy.accessLevel = .private
+			}
+		}
+		if let indentSwitchCaseLabels = payload["indentSwitchCaseLabels"] as? Bool {
+			configuration.indentSwitchCaseLabels = indentSwitchCaseLabels
+		}
 
 		if let rules = payload["rules"] as? [String: Bool] {
 			for rule in rules {

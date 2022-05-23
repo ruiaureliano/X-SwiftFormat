@@ -1,6 +1,6 @@
 # 👨‍🏫 Docs
 
-[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.5-0f73b4.svg)](https://swift.org/blog/swift-5-5-released/) [![](https://img.shields.io/badge/docs-1.1.3-0f73b4.svg)](./DOCS.md)
+[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.6-0f73b4.svg)](https://swift.org/blog/swift-5-6-released/) [![](https://img.shields.io/badge/docs-1.2-0f73b4.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
@@ -25,7 +25,7 @@ X-SwiftFormat is a Xcode Plugin built on top of two cool frameworks:
 
 ![](./assets/docs/3.png)
 
-**4)** I will just change two options here, `Line Length = 120` and use `Tabs = 1`. We have more options to change.
+**4)** I will just change two options here, `Line Length = 120` and use `Tabs = 1` . We have more options to change.
 
 ![](./assets/docs/4.png)
 
@@ -39,7 +39,7 @@ X-SwiftFormat is a Xcode Plugin built on top of two cool frameworks:
 1. `// swift-format-ignore: OrderedImports`
 1. `// swift-format-ignore: DoNotUseSemicolons`
 
-Using those rules, imports will not be sorted, the block `[17-23]` will not be formatted and we can use semicolons on the block `[26-30]`.
+Using those rules, imports will not be sorted, the block `[17-23]` will not be formatted and we can use semicolons on the block `[26-30]` .
 
 ![](./assets/docs/6.png)
 

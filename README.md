@@ -1,6 +1,6 @@
 # 🛠 X-SwiftFormat 
 
-[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.5-0f73b4.svg)](https://swift.org/blog/swift-5-5-released/) [![](https://img.shields.io/badge/docs-1.1.3-0f73b4.svg)](./DOCS.md)
+[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.6-0f73b4.svg)](https://swift.org/blog/swift-5-6-released/) [![](https://img.shields.io/badge/docs-1.2-0f73b4.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf_header.png)
 
@@ -8,11 +8,11 @@
 
 ### Using Github
 
-[![](https://img.shields.io/badge/Download-1.1.3-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.1.3/x-swiftformat_1.1.3.zip)
+[![](https://img.shields.io/badge/Download-1.2-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.2/x-swiftformat_1.2.zip)
 
 ### Using Cask
 
-`brew install --cask x-swiftformat`
+ `brew install --cask x-swiftformat`
 
 ## Usage
 
@@ -26,7 +26,7 @@
 
 ![](./assets/readme/xsf_format.png)
 
-**b)** You can export a configuration file (`.swift-format`) to use later 🖥
+**b)** You can export a configuration file ( `.swift-format` ) to use later 🖥
 
 ### 2) Enable X-SwiftFormat
 
@@ -51,17 +51,21 @@ Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts
 # Installing [Apple Swift Format](https://github.com/apple/swift-format) (Xcode or Mint)
 
 ## a) Using Xcode
-if you are using **Xcode 13 (Swift 5.5)**, you can check out and build swift-format using the following commands:
+
+if you are using **Xcode 13.4 (Swift 5.6)**, you can check out and build swift-format using the following commands:
 
 ```
-git clone -b swift-5.5-branch https://github.com/apple/swift-format.git
+git clone -b release/5.6 https://github.com/apple/swift-format.git
 cd swift-format
 swift build
 ```
+
 You should see this
+
 ```
-[207/207] Linking swift-format
+Build complete! (51.82s)
 ```
+
 👍👍👍
 
 ## b) Using Mint 
@@ -70,31 +74,34 @@ If you dint have **Homebrew**, install [here](https://brew.sh)
 
 ```
 brew install mint
-mint install apple/swift-format@swift-5.5-branch
+mint install apple/swift-format@release/5.6
 ```
+
 You should see this
+
 ```
-🌱 Cloning swift-format swift-5.5-branch
+🌱 Cloning swift-format release/5.6
 🌱 Resolving package
 🌱 Building package
-🌱 Installed swift-format swift-5.5-branch
-🌱 Linked swift-format swift-5.5-branch to /usr/local/bin
+🌱 Installed swift-format release/5.6
+🌱 Linked swift-format release/5.6
 ```
+
 👍👍👍
 
 ### Command Line Usage
 
 ```
 swift-format -v
-0.50300.0
+0.50600.1
 ```
 
 |Command | Description |
 |-|-|
-|`swift-format swift`|Display formatted code|
-|`swift-format -i file.swift`|Overwrites formatted code|
-|`swift-format -r folder`|Format all files in a folder|
-|`swift-format -r -i folder`|Format all files in a folder and overwrites|
+| `swift-format swift` |Display formatted code|
+| `swift-format -i file.swift` |Overwrites formatted code|
+| `swift-format -r folder` |Format all files in a folder|
+| `swift-format -r -i folder` |Format all files in a folder and overwrites|
 
 Check more info here: [https://github.com/apple/swift-format](https://github.com/apple/swift-format)
 
@@ -103,4 +110,3 @@ Check more info here: [https://github.com/apple/swift-format](https://github.com
 I'm [Rui Aureliano](http://ruiaureliano.com), iOS and macOS Engineer at [Olá Brothers](https://theolabrothers.com). We make [Sip](https://sipapp.io) 🤓
 
 [Linkedin](https://www.linkedin.com/in/ruiaureliano) | [AngelList](https://angel.co/ruiaureliano) | [Twitter](https://twitter.com/ruiaureliano) | [Github](https://github.com/ruiaureliano) | [Medium](https://medium.com/@ruiaureliano) | [Stackoverflow](https://stackoverflow.com/users/881095/ruiaureliano)
-
