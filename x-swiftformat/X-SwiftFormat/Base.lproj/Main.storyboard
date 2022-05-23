@@ -89,7 +89,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" alignment="center" id="qNE-Ga-27w">
                                     <font key="font" metaFont="systemLight" size="13"/>
-                                    <string key="title">Copyright © 2020 Olá Brothers LDA. 
+                                    <string key="title">Copyright © 2022 Olá Brothers LDA. 
 All rights reserved.</string>
                                     <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
