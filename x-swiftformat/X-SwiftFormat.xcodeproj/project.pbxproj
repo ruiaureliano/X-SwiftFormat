@@ -11,6 +11,9 @@
 		B202DFB2283B95C700016E98 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = B202DFB1283B95C700016E98 /* SwiftFormatConfiguration */; };
 		B202DFB7283B95F500016E98 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = B202DFB6283B95F500016E98 /* SwiftFormat */; };
 		B202DFB9283B95F900016E98 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = B202DFB8283B95F900016E98 /* SwiftFormatConfiguration */; };
+		B21B854A283BF553008E6870 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21B8549283BF553008E6870 /* XcodeKit.framework */; };
+		B21B854B283BF553008E6870 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B21B8549283BF553008E6870 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B21B8552283BF7E2008E6870 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21B8551283BF7E2008E6870 /* Cocoa.framework */; };
 		B2223F3725744E8F0000C928 /* CellSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2223F3625744E8F0000C928 /* CellSwitchView.swift */; };
 		B2223F3B25744F1D0000C928 /* MainViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2223F3A25744F1D0000C928 /* MainViewController+Table.swift */; };
 		B2254FC72574045C00FA859E /* String+ReverseCamel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2254FC62574045C00FA859E /* String+ReverseCamel.swift */; };
@@ -62,6 +65,8 @@
 		B2C2F74025790C5200330860 /* SwiftFormatOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A232682577FD3300BF41AB /* SwiftFormatOutputStream.swift */; };
 		B2D4A83225713D19000619C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D4A83125713D19000619C3 /* Assets.xcassets */; };
 		B2D4A83525713D19000619C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D4A83325713D19000619C3 /* Main.storyboard */; };
+		B2DFBE5E283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DFBE5D283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib */; };
+		B2DFBE5F283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2DFBE5D283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B2FBC3A82575767A00BBCC49 /* Collection+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FBC3A72575767A00BBCC49 /* Collection+JSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +81,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B21B8550283BF654008E6870 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2C2F72825790AF600330860 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +108,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B21B854B283BF553008E6870 /* XcodeKit.framework in Embed Frameworks */,
+				B2DFBE5F283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +117,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B21B8549283BF553008E6870 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		B21B8551283BF7E2008E6870 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B2223F3625744E8F0000C928 /* CellSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSwitchView.swift; sourceTree = "<group>"; };
 		B2223F3A25744F1D0000C928 /* MainViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Table.swift"; sourceTree = "<group>"; };
 		B2254FC62574045C00FA859E /* String+ReverseCamel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReverseCamel.swift"; sourceTree = "<group>"; };
@@ -148,6 +167,7 @@
 		B2D4A83425713D19000619C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2D4A83625713D19000619C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D4A83725713D19000619C3 /* XSwiftFormat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XSwiftFormat.entitlements; sourceTree = "<group>"; };
+		B2DFBE5D283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = lib_InternalSwiftSyntaxParser.dylib; path = "../../../Library/Developer/Xcode/DerivedData/X-SwiftFormat-absvpbmvvpabqwhkyszftvpattoc/Build/Products/Debug/lib_InternalSwiftSyntaxParser.dylib"; sourceTree = "<group>"; };
 		B2FBC3A72575767A00BBCC49 /* Collection+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +176,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21B8552283BF7E2008E6870 /* Cocoa.framework in Frameworks */,
+				B21B854A283BF553008E6870 /* XcodeKit.framework in Frameworks */,
+				B2DFBE5E283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */,
 				B202DFB9283B95F900016E98 /* SwiftFormatConfiguration in Frameworks */,
 				B202DFB7283B95F500016E98 /* SwiftFormat in Frameworks */,
 			);
@@ -176,6 +199,9 @@
 		B202DFB5283B95F500016E98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2DFBE5D283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib */,
+				B21B8551283BF7E2008E6870 /* Cocoa.framework */,
+				B21B8549283BF553008E6870 /* XcodeKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -481,6 +507,7 @@
 				B2D4A82825713D18000619C3 /* Resources */,
 				B2D4A84425713DA7000619C3 /* Run Script (SwiftLint) */,
 				B2C2F72825790AF600330860 /* Embed App Extensions */,
+				B21B8550283BF654008E6870 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -672,7 +699,14 @@
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat-Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat.extension;
@@ -693,7 +727,14 @@
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat-Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat.extension;
@@ -836,7 +877,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
@@ -863,7 +907,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
