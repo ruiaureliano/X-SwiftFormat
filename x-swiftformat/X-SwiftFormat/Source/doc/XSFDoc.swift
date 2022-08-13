@@ -2,10 +2,6 @@ import Cocoa
 
 let kReadXSFFileNotification = NSNotification.Name(rawValue: "kReadXSFFileNotification")
 
-enum XSFDocType: String {
-	case swiftformat = "swift-format"
-}
-
 class XSFDoc: NSDocument {
 
 	override var windowNibName: String? {
