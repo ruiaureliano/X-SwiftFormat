@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -53,7 +53,7 @@
 		B2A2326D2578027E00BF41AB /* AppDelegate+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A2326C2578027E00BF41AB /* AppDelegate+Menu.swift */; };
 		B2A23270257802E000BF41AB /* XSFDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A2326F257802E000BF41AB /* XSFDoc.swift */; };
 		B2A23272257802F700BF41AB /* XSFDocHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A23271257802F700BF41AB /* XSFDocHandler.swift */; };
-		B2C2F72725790AF600330860 /* X-SwiftFormat-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2C2F71925790AF600330860 /* X-SwiftFormat-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2C2F72725790AF600330860 /* X-SwiftFormat-Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B2C2F71925790AF600330860 /* X-SwiftFormat-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B2C2F73625790BD800330860 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2F73325790BD800330860 /* SourceEditorExtension.swift */; };
 		B2C2F73725790BD800330860 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2F73525790BD800330860 /* SourceEditorCommand.swift */; };
 		B2C2F73A25790C3100330860 /* SharedConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278B3F12576690000E9BE4A /* SharedConfiguration.swift */; };
@@ -91,15 +91,15 @@
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2C2F72825790AF600330860 /* Embed App Extensions */ = {
+		B2C2F72825790AF600330860 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B2C2F72725790AF600330860 /* X-SwiftFormat-Extension.appex in Embed App Extensions */,
+				B2C2F72725790AF600330860 /* X-SwiftFormat-Extension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B2C2F73025790B8A00330860 /* Embed Frameworks */ = {
@@ -506,7 +506,7 @@
 				B2D4A82725713D18000619C3 /* Frameworks */,
 				B2D4A82825713D18000619C3 /* Resources */,
 				B2D4A84425713DA7000619C3 /* Run Script (SwiftLint) */,
-				B2C2F72825790AF600330860 /* Embed App Extensions */,
+				B2C2F72825790AF600330860 /* Embed Foundation Extensions */,
 				B21B8550283BF654008E6870 /* Embed Libraries */,
 			);
 			buildRules = (
@@ -530,7 +530,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					B2C2F71825790AF600330860 = {
 						CreatedOnToolsVersion = 12.2;
@@ -586,6 +586,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		B2D4A84425713DA7000619C3 /* Run Script (SwiftLint) */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -695,7 +696,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 220523;
+				CURRENT_PROJECT_VERSION = 221101;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat-Extension/Info.plist";
@@ -708,7 +710,7 @@
 					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -723,7 +725,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 220523;
+				CURRENT_PROJECT_VERSION = 221101;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat-Extension/Info.plist";
@@ -736,7 +739,7 @@
 					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -778,6 +781,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -839,6 +843,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -869,7 +874,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 220523;
+				CURRENT_PROJECT_VERSION = 221101;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat/Info.plist";
@@ -881,8 +887,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.2;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -899,7 +905,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 220523;
+				CURRENT_PROJECT_VERSION = 221101;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "X-SwiftFormat/Info.plist";
@@ -911,8 +918,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.2;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -956,7 +963,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-format";
 			requirement = {
-				branch = release/5.6;
+				branch = release/5.7;
 				kind = branch;
 			};
 		};
