@@ -63,10 +63,8 @@
 		B2C2F73E25790C3F00330860 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258D129257276FB00CA4BA2 /* Notifications.swift */; };
 		B2C2F73F25790C4300330860 /* Configuration+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A2326A2577FEFD00BF41AB /* Configuration+Build.swift */; };
 		B2C2F74025790C5200330860 /* SwiftFormatOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A232682577FD3300BF41AB /* SwiftFormatOutputStream.swift */; };
-		B2D4A83225713D19000619C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D4A83125713D19000619C3 /* Assets.xcassets */; };
+		B2D4A83225713D19000619C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D4A83125713D19000619C3 /* Images.xcassets */; };
 		B2D4A83525713D19000619C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D4A83325713D19000619C3 /* Main.storyboard */; };
-		B2DFBE5E283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DFBE5D283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib */; };
-		B2DFBE5F283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2DFBE5D283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B2FBC3A82575767A00BBCC49 /* Collection+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FBC3A72575767A00BBCC49 /* Collection+JSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -109,7 +107,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B21B854B283BF553008E6870 /* XcodeKit.framework in Embed Frameworks */,
-				B2DFBE5F283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,11 +160,10 @@
 		B2C2F73525790BD800330860 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		B2C2F73925790BF800330860 /* XSwiftFormatExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = XSwiftFormatExtension.entitlements; sourceTree = "<group>"; };
 		B2D4A82A25713D18000619C3 /* X-SwiftFormat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X-SwiftFormat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2D4A83125713D19000619C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2D4A83125713D19000619C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2D4A83425713D19000619C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2D4A83625713D19000619C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D4A83725713D19000619C3 /* XSwiftFormat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XSwiftFormat.entitlements; sourceTree = "<group>"; };
-		B2DFBE5D283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = lib_InternalSwiftSyntaxParser.dylib; path = "../../../Library/Developer/Xcode/DerivedData/X-SwiftFormat-absvpbmvvpabqwhkyszftvpattoc/Build/Products/Debug/lib_InternalSwiftSyntaxParser.dylib"; sourceTree = "<group>"; };
 		B2FBC3A72575767A00BBCC49 /* Collection+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,7 +174,6 @@
 			files = (
 				B21B8552283BF7E2008E6870 /* Cocoa.framework in Frameworks */,
 				B21B854A283BF553008E6870 /* XcodeKit.framework in Frameworks */,
-				B2DFBE5E283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */,
 				B202DFB9283B95F900016E98 /* SwiftFormatConfiguration in Frameworks */,
 				B202DFB7283B95F500016E98 /* SwiftFormat in Frameworks */,
 			);
@@ -199,7 +194,6 @@
 		B202DFB5283B95F500016E98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2DFBE5D283CDB8A00A01DA0 /* lib_InternalSwiftSyntaxParser.dylib */,
 				B21B8551283BF7E2008E6870 /* Cocoa.framework */,
 				B21B8549283BF553008E6870 /* XcodeKit.framework */,
 			);
@@ -209,10 +203,10 @@
 		B2223F3525744E640000C928 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				B2223F3625744E8F0000C928 /* CellSwitchView.swift */,
-				B2506F912574E15600712630 /* CellNumberView.swift */,
 				B2506F942574E4E900712630 /* CellComboNumView.swift */,
 				B2277405283BB5ED00E010B8 /* CellComboView.swift */,
+				B2506F912574E15600712630 /* CellNumberView.swift */,
+				B2223F3625744E8F0000C928 /* CellSwitchView.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -236,16 +230,16 @@
 		B258D125257276FB00CA4BA2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B2513F592656912A0020DFE1 /* sherlog */,
-				B2A2326E257802CA00BF41AB /* doc */,
-				B2A232672577FD2900BF41AB /* output */,
-				B2B8159C2572A83300CD7510 /* configuration */,
 				B258D126257276FB00CA4BA2 /* app */,
-				B258D128257276FB00CA4BA2 /* notification */,
+				B2B8159C2572A83300CD7510 /* configuration */,
 				B258D12A257276FB00CA4BA2 /* constants */,
+				B2A2326E257802CA00BF41AB /* doc */,
 				B258D12C257276FB00CA4BA2 /* extensions */,
-				B258D131257276FB00CA4BA2 /* viewcontrollers */,
 				B258D138257276FB00CA4BA2 /* generic */,
+				B258D128257276FB00CA4BA2 /* notification */,
+				B2A232672577FD2900BF41AB /* output */,
+				B2513F592656912A0020DFE1 /* sherlog */,
+				B258D131257276FB00CA4BA2 /* viewcontrollers */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -278,13 +272,13 @@
 		B258D12C257276FB00CA4BA2 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B258D12D257276FB00CA4BA2 /* NSImage+Tint.swift */,
-				B258D12E257276FB00CA4BA2 /* NSButton+Tint.swift */,
-				B258D12F257276FB00CA4BA2 /* Data+JSON.swift */,
 				B258D130257276FB00CA4BA2 /* Bundle+Utilities.swift */,
-				B2254FC62574045C00FA859E /* String+ReverseCamel.swift */,
 				B2FBC3A72575767A00BBCC49 /* Collection+JSON.swift */,
 				B2A2326A2577FEFD00BF41AB /* Configuration+Build.swift */,
+				B258D12F257276FB00CA4BA2 /* Data+JSON.swift */,
+				B258D12E257276FB00CA4BA2 /* NSButton+Tint.swift */,
+				B258D12D257276FB00CA4BA2 /* NSImage+Tint.swift */,
+				B2254FC62574045C00FA859E /* String+ReverseCamel.swift */,
 				B2277407283BB9A300E010B8 /* String+Size.swift */,
 			);
 			path = extensions;
@@ -293,10 +287,10 @@
 		B258D131257276FB00CA4BA2 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				B2513F5C2656935A0020DFE1 /* sponsors */,
-				B285D8B12577EA5000A1B17E /* preview */,
 				B258D132257276FB00CA4BA2 /* about */,
 				B258D135257276FB00CA4BA2 /* main */,
+				B285D8B12577EA5000A1B17E /* preview */,
+				B2513F5C2656935A0020DFE1 /* sponsors */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -313,10 +307,10 @@
 		B258D135257276FB00CA4BA2 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				B2223F3525744E640000C928 /* cell */,
 				B258D137257276FB00CA4BA2 /* MainViewController.swift */,
 				B258D136257276FB00CA4BA2 /* MainViewController+Actions.swift */,
 				B2223F3A25744F1D0000C928 /* MainViewController+Table.swift */,
+				B2223F3525744E640000C928 /* cell */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -327,6 +321,15 @@
 				B258D139257276FB00CA4BA2 /* ColorView.swift */,
 			);
 			path = generic;
+			sourceTree = "<group>";
+		};
+		B273EDAD2AC736700008F4E8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B2A232582577F94A00BF41AB /* Colors.xcassets */,
+				B2D4A83125713D19000619C3 /* Images.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		B285D8B12577EA5000A1B17E /* preview */ = {
@@ -371,9 +374,9 @@
 			isa = PBXGroup;
 			children = (
 				B278B3F12576690000E9BE4A /* SharedConfiguration.swift */,
-				B278B3F62576732900E9BE4A /* SharedConfiguration+UserDefaults.swift */,
 				B278B3F92576735B00E9BE4A /* SharedConfiguration+Keys.swift */,
 				B278B3FC2576748700E9BE4A /* SharedConfiguration+Update.swift */,
+				B278B3F62576732900E9BE4A /* SharedConfiguration+UserDefaults.swift */,
 			);
 			path = configuration;
 			sourceTree = "<group>";
@@ -381,8 +384,8 @@
 		B2C2F71E25790AF600330860 /* X-SwiftFormat-Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B2C2F73825790BE200330860 /* Supporting Files */,
 				B2C2F73125790BD800330860 /* Source */,
+				B2C2F73825790BE200330860 /* Supporting Files */,
 			);
 			path = "X-SwiftFormat-Extension";
 			sourceTree = "<group>";
@@ -390,8 +393,8 @@
 		B2C2F73125790BD800330860 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B2C2F73225790BD800330860 /* extension */,
 				B2C2F73425790BD800330860 /* commands */,
+				B2C2F73225790BD800330860 /* extension */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -446,11 +449,10 @@
 		B2D4A82C25713D18000619C3 /* X-SwiftFormat */ = {
 			isa = PBXGroup;
 			children = (
-				B2A232582577F94A00BF41AB /* Colors.xcassets */,
-				B2D4A83125713D19000619C3 /* Assets.xcassets */,
+				B273EDAD2AC736700008F4E8 /* Assets */,
 				B258D125257276FB00CA4BA2 /* Source */,
-				B2D4A84025713D5A000619C3 /* Supporting Files */,
 				B2D4A83F25713D4E000619C3 /* Storyboards */,
+				B2D4A84025713D5A000619C3 /* Supporting Files */,
 			);
 			path = "X-SwiftFormat";
 			sourceTree = "<group>";
@@ -466,8 +468,8 @@
 		B2D4A84025713D5A000619C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B2D4A83625713D19000619C3 /* Info.plist */,
 				B2D4A83725713D19000619C3 /* XSwiftFormat.entitlements */,
+				B2D4A83625713D19000619C3 /* Info.plist */,
 				B2A2325A2577F9F000BF41AB /* sample.txt */,
 			);
 			name = "Supporting Files";
@@ -529,8 +531,9 @@
 		B2D4A82225713D18000619C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					B2C2F71825790AF600330860 = {
 						CreatedOnToolsVersion = 12.2;
@@ -575,7 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A232592577F94A00BF41AB /* Colors.xcassets in Resources */,
-				B2D4A83225713D19000619C3 /* Assets.xcassets in Resources */,
+				B2D4A83225713D19000619C3 /* Images.xcassets in Resources */,
 				B2A2325B2577F9F000BF41AB /* sample.txt in Resources */,
 				B2D4A83525713D19000619C3 /* Main.storyboard in Resources */,
 			);
@@ -601,7 +604,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "#if which swiftlint >/dev/null; then\n#    swiftlint\n#else\n#    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -696,7 +699,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 221101;
+				CURRENT_PROJECT_VERSION = 220929;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -705,12 +708,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -725,7 +725,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 221101;
+				CURRENT_PROJECT_VERSION = 220929;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -734,12 +734,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -751,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -785,6 +783,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -799,7 +798,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -813,6 +812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -847,6 +847,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -855,7 +856,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -874,7 +875,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 221101;
+				CURRENT_PROJECT_VERSION = 220929;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -883,12 +884,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -905,7 +903,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 221101;
+				CURRENT_PROJECT_VERSION = 220929;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TQWQC67C6D;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -914,12 +912,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/X-SwiftFormat/Framework",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruiaureliano.xswiftformat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -963,7 +958,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-format";
 			requirement = {
-				branch = release/5.7;
+				branch = release/5.9;
 				kind = branch;
 			};
 		};

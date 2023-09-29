@@ -31,8 +31,8 @@ extension PreviewViewController {
 					informativeText = "The requested file was not readable or it did not exist."
 				case .isDirectory:
 					informativeText = "The requested file was a directory."
-				case .fileContainsInvalidSyntax(let position):
-					informativeText = "The file contains invalid or unrecognized Swift syntax and cannot be handled safely. (Position: \(position.utf8Offset))"
+				case .fileContainsInvalidSyntax:
+					informativeText = "The file contains invalid or unrecognized Swift syntax and cannot be handled safely."
 				}
 			}
 			let alert = NSAlert()

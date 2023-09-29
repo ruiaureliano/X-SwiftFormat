@@ -23,9 +23,9 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 							completionHandler(NSError(domain: "The requested file was not readable or it did not exist.", code: -1002, userInfo: nil) as Error)
 						case .isDirectory:
 							completionHandler(NSError(domain: "The requested file was a directory.", code: -1003, userInfo: nil) as Error)
-						case .fileContainsInvalidSyntax(let position):
+						case .fileContainsInvalidSyntax:
 							completionHandler(
-								NSError(domain: "The file contains invalid or unrecognized Swift syntax and cannot be handled safely. (Position: \(position.utf8Offset))", code: -1004, userInfo: nil) as Error)
+								NSError(domain: "The file contains invalid or unrecognized Swift syntax and cannot be handled safely.", code: -1004, userInfo: nil) as Error)
 						}
 					} else {
 						completionHandler(error)
