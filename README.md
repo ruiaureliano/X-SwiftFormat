@@ -1,14 +1,14 @@
 # 🛠 X-SwiftFormat
 
-[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.7-0f73b4.svg)](https://swift.org/blog/swift-5.7-released/) [![](https://img.shields.io/badge/docs-1.3-0f73b4.svg)](./DOCS.md)
+[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.9-0f73b4.svg)](https://swift.org/blog/swift-5.9-released/) [![](https://img.shields.io/badge/docs-2.0-0f73b4.svg)](./DOCS.md)
 
-![](./assets/readme/xsf_header.png)
+![](./assets/readme/xsf-header.png)
 
 ## Installation
 
 ### Using Github
 
-[![](https://img.shields.io/badge/Download-1.3-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/1.3/x-swiftformat_1.3.zip)
+[![](https://img.shields.io/badge/Download-2.0-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/2.0/x-swiftformat_2.0.zip)
 
 ### Using Cask
 
@@ -20,31 +20,36 @@
 
 **X-SwiftFormat** works as Xcode Extension to format your swift code. You will need to open this once to activate it 👍
 
-![](./assets/readme/xsf_running.png)
+![xsf-running-light](./assets/readme/xsf-running-light.png#gh-light-mode-only)
+![xsf-running-light](./assets/readme/xsf-running-dark.png#gh-dark-mode-only)
 
 **a)** You case use the **Preview** to see the format running in the app 💪
 
-![](./assets/readme/xsf_format.png)
+![xsf-format-light](./assets/readme/xsf-format-light.png#gh-light-mode-only)
+![xsf-format-light](./assets/readme/xsf-format-dark.png#gh-dark-mode-only)
 
 **b)** You can export a configuration file ( `.swift-format` ) to use later 🖥
 
 ### 2) Enable X-SwiftFormat
 
-Open **System Preferences** ▸ **Extensions** ▸ **Xcode Source Editor** and make sure **X-SwiftFormat** is selected ✅
+Open **System Preferences** ▸ **Privacy & Security** ▸ **Extensions** ▸ **Xcode Source Editor** and make sure **X-SwiftFormat** is selected ✅
 
-![](./assets/readme/xsf_extensions.png)
+![xsf-extensions-light](./assets/readme/xsf-extensions-light.png#gh-light-mode-only)
+![xsf-extensions-light](./assets/readme/xsf-extensions-dark.png#gh-dark-mode-only)
 
 ### 3) Use X-SwiftFormat
 
 Open Xcode and use the **Format Swift Code** command in Xcode's **Editor** menu 🚀
 
-![](./assets/readme/xsf_usage.png)
+![xsf-usage-light](./assets/readme/xsf-usage-light.png#gh-light-mode-only)
+![xsf-usage-light](./assets/readme/xsf-usage-dark.png#gh-dark-mode-only)
 
 ### 4) Add X-SwiftFormat Shortcut
 
-Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts** tab. Select **App Shortcuts**, then hit the <kbd>+</kbd> button. Select **Xcode**, enter `Format Swift Code` and set your **Shortcut**.👏
+Open **System Preferences** ▸ **PKeyboard** ▸ **Keyboard Shortcuts** ▸ **App Shortcuts**, then hit the <kbd>+</kbd> button. Select **Xcode**, enter `Format Swift Code` and set your **Shortcut**.👏
 
-![](./assets/readme/xsf_shortcuts.png)
+![xsf-shortcuts-light](./assets/readme/xsf-shortcuts-light.png#gh-light-mode-only)
+![xsf-shortcuts-light](./assets/readme/xsf-shortcuts-dark.png#gh-dark-mode-only)
 
 ---
 
@@ -52,10 +57,10 @@ Open **System Preferences**, click on **Keyboard** and switch to the **Shortcuts
 
 ## a) Using Xcode
 
-if you are using **Xcode 14 (Swift 5.7)**, you can check out and build swift-format using the following commands:
+if you are using **Xcode 15 (Swift 5.9)**, you can check out and build swift-format using the following commands:
 
 ```
-git clone -b release/5.7 https://github.com/apple/swift-format.git
+git clone -b release/5.9 https://github.com/apple/swift-format.git
 cd swift-format
 swift build
 ```
@@ -63,7 +68,7 @@ swift build
 You should see this
 
 ```
-Build complete! (51.82s)
+Build complete! (50.00s)
 ```
 
 👍👍👍
@@ -74,17 +79,17 @@ If you did not have **Homebrew**, install [here](https://brew.sh)
 
 ```
 brew install mint
-mint install apple/swift-format@release/5.7
+mint install apple/swift-format@release/5.9
 ```
 
 You should see this
 
 ```
-🌱 Cloning swift-format release/5.7
+🌱 Cloning swift-format release/5.9
 🌱 Resolving package
 🌱 Building package
-🌱 Installed swift-format release/5.7
-🌱 Linked swift-format release/5.7
+🌱 Installed swift-format release/5.9
+🌱 Linked swift-format release/5.9
 ```
 
 👍👍👍
@@ -93,7 +98,7 @@ You should see this
 
 ```
 swift-format -v
-0.50700.1
+509.0.0
 ```
 
 | Command                      | Description                                 |
@@ -109,4 +114,4 @@ Check more info here: [https://github.com/apple/swift-format](https://github.com
 
 I'm [Rui Aureliano](http://ruiaureliano.com), iOS and macOS Engineer at [Olá Brothers](https://theolabrothers.com). We make [Sip](https://sipapp.io) 🤓
 
-[Linkedin](https://www.linkedin.com/in/ruiaureliano) | [AngelList](https://angel.co/ruiaureliano) | [Twitter](https://twitter.com/ruiaureliano) | [Github](https://github.com/ruiaureliano) | [Medium](https://medium.com/@ruiaureliano) | [Stackoverflow](https://stackoverflow.com/users/881095/ruiaureliano)
+[Linkedin](https://www.linkedin.com/in/ruiaureliano) | [Twitter](https://twitter.com/ruiaureliano) | [Github](https://github.com/ruiaureliano) | [Stackoverflow](https://stackoverflow.com/users/881095/ruiaureliano)

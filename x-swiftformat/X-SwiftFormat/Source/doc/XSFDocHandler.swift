@@ -8,12 +8,7 @@ class XSFDocHandler: NSObject {
 			if let last = components.last {
 				let split = last.split(separator: ".")
 				if split.count == 2 {
-					if let docType = XSFDocType(rawValue: String(split[1]).lowercased()) {
-						switch docType {
-						case .swiftformat:
-							readSwiftFormatFile(with: URL(fileURLWithPath: filename))
-						}
-					}
+					readSwiftFormatFile(with: URL(fileURLWithPath: filename))
 				}
 			}
 		}

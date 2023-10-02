@@ -20,10 +20,6 @@ import Cocoa
 		}
 	}
 
-	override func prepareForInterfaceBuilder() {
-		super.prepareForInterfaceBuilder()
-	}
-
 	override var allowsVibrancy: Bool {
 		return false
 	}

@@ -8,17 +8,11 @@ extension AppDelegate {
 			openPanel.showsHiddenFiles = true
 			openPanel.canChooseDirectories = false
 			openPanel.allowsMultipleSelection = false
-			openPanel.allowedFileTypes = [XSFDocType.swiftformat.rawValue]
 
 			openPanel.beginSheetModal(for: window) { response in
 				if response.rawValue == 1 {
 					if let url = openPanel.urls.first {
-						if let docType = XSFDocType(rawValue: url.pathExtension.lowercased()) {
-							switch docType {
-							case .swiftformat:
-								XSFDocHandler.readSwiftFormatFile(with: url)
-							}
-						}
+						XSFDocHandler.readSwiftFormatFile(with: url)
 					}
 				}
 			}
