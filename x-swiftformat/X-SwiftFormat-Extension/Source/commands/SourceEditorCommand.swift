@@ -43,7 +43,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 			let configuration = Configuration.buildConfiguration(with: sharedConfiguration.payload)
 			let swiftFormatter = SwiftFormatter(configuration: configuration)
 			var swiftFormatOutputStream = SwiftFormatOutputStream()
-			
+
 			do {
 				try swiftFormatter.format(source: invocation.buffer.completeBuffer, assumingFileURL: nil, to: &swiftFormatOutputStream)
 				if let output = swiftFormatOutputStream.output, invocation.buffer.completeBuffer != output {
@@ -51,9 +51,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 					// Remove all selections to avoid a crash when changing the contents of the buffer.
 					let selections = invocation.buffer.selections.compactMap { $0 as? XCSourceTextRange }
 					invocation.buffer.selections.removeAllObjects()
-					
 					invocation.buffer.completeBuffer = output
-					
 					// Restore selections
 					selections.forEach { selection in
 						invocation.buffer.selections.add(XCSourceTextRange(start: selection.start, end: selection.end))

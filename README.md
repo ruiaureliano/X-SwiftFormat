@@ -1,6 +1,6 @@
 # 🛠 X-SwiftFormat
 
-[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-5.9-0f73b4.svg)](https://swift.org/blog/swift-5.9-released/) [![](https://img.shields.io/badge/docs-2.0-0f73b4.svg)](./DOCS.md)
+[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](./LICENSE.md) [![](https://img.shields.io/badge/swift-6.0-0f73b4.svg)](https://swift.org/blog/swift-6.0-released/) [![](https://img.shields.io/badge/docs-2.0.1-0f73b4.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf-header.png)
 
@@ -8,7 +8,7 @@
 
 ### Using Github
 
-[![](https://img.shields.io/badge/Download-2.0-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/2.0/x-swiftformat_2.0.zip)
+[![](https://img.shields.io/badge/Download-2.0.1-0f73b4.svg?logo=github)](https://github.com/ruiaureliano/X-SwiftFormat/releases/download/2.0.1/x-swiftformat_2.0.1.zip)
 
 ### Using Cask
 
@@ -57,10 +57,10 @@ Open **System Preferences** ▸ **PKeyboard** ▸ **Keyboard Shortcuts** ▸ **A
 
 ## a) Using Xcode
 
-if you are using **Xcode 15 (Swift 5.9)**, you can check out and build swift-format using the following commands:
+if you are using **Xcode 15 (Swift 6.0)**, you can check out and build swift-format using the following commands:
 
 ```
-git clone -b release/5.9 https://github.com/apple/swift-format.git
+git clone -b release/6.0 https://github.com/apple/swift-format.git
 cd swift-format
 swift build
 ```
@@ -79,17 +79,17 @@ If you did not have **Homebrew**, install [here](https://brew.sh)
 
 ```
 brew install mint
-mint install apple/swift-format@release/5.9
+mint install apple/swift-format@release/6.0
 ```
 
 You should see this
 
 ```
-🌱 Cloning swift-format release/5.9
+🌱 Cloning swift-format release/6.0
 🌱 Resolving package
 🌱 Building package
-🌱 Installed swift-format release/5.9
-🌱 Linked swift-format release/5.9
+🌱 Installed swift-format release/6.0
+🌱 Linked swift-format release/6.0
 ```
 
 👍👍👍
@@ -98,7 +98,7 @@ You should see this
 
 ```
 swift-format -v
-509.0.0
+600.0.0
 ```
 
 | Command                      | Description                                 |
