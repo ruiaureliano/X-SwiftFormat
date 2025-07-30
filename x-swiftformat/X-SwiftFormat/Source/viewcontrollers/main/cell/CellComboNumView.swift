@@ -35,7 +35,7 @@ class CellComboNumView: NSView, NSTextFieldDelegate {
 		self.increment = increment
 		self.sharedConfiguration = sharedConfiguration
 
-		self.labelCheck.title = SharedConfiguration.label(for: key)
+		self.labelCheck.title = sharedConfiguration.label(for: key)
 
 		popupField.removeAllItems()
 		popupField.addItems(withTitles: labels.map { $0.capitalized })

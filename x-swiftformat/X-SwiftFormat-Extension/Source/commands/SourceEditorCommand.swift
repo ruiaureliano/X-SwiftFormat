@@ -1,6 +1,5 @@
 import Foundation
 import SwiftFormat
-import SwiftFormatConfiguration
 import XcodeKit
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
@@ -24,8 +23,13 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 						case .isDirectory:
 							completionHandler(NSError(domain: "The requested file was a directory.", code: -1003, userInfo: nil) as Error)
 						case .fileContainsInvalidSyntax:
-							completionHandler(
-								NSError(domain: "The file contains invalid or unrecognized Swift syntax and cannot be handled safely.", code: -1004, userInfo: nil) as Error)
+							completionHandler(NSError(domain: "The file contains invalid or unrecognized Swift syntax and cannot be handled safely.", code: -1004, userInfo: nil) as Error)
+						case .unrecognizedExperimentalFeature(let feature):
+							completionHandler(NSError(domain: "The Swift code uses an unrecognized experimental feature: \(feature).", code: -1005, userInfo: ["feature": feature]))
+						case .configurationDumpFailed(let reason):
+							completionHandler(NSError(domain: "Failed to dump SwiftFormat configuration: \(reason).", code: -1006, userInfo: ["reason": reason]))
+						case .unsupportedConfigurationVersion(let version, let highestSupported):
+							completionHandler(NSError(domain: "The configuration version \(version) is unsupported. Highest supported version is \(highestSupported).", code: -1007, userInfo: ["version": version, "highestSupported": highestSupported]))
 						}
 					} else {
 						completionHandler(error)
@@ -45,7 +49,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 			var swiftFormatOutputStream = SwiftFormatOutputStream()
 
 			do {
-				try swiftFormatter.format(source: invocation.buffer.completeBuffer, assumingFileURL: nil, to: &swiftFormatOutputStream)
+				try swiftFormatter.format(source: invocation.buffer.completeBuffer, assumingFileURL: nil, selection: .infinite, to: &swiftFormatOutputStream)
 				if let output = swiftFormatOutputStream.output, invocation.buffer.completeBuffer != output {
 					// According to https://github.com/nicklockwood/SwiftFormat/blob/4bf475154c1c98dcdf751037f930f8e5c72597a4/EditorExtension/Extension/FormatFileCommand.swift#L69-L71
 					// Remove all selections to avoid a crash when changing the contents of the buffer.

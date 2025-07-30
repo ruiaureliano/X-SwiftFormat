@@ -1,10 +1,17 @@
 import Cocoa
+import TelemetryDeck
 
 var sherlog = Sherlog.self
+
+private let kTelemetryAppId = "D0AE4EB9-8323-429A-AA5B-669AD0E45F6A"
+private let kTelemetryAppNamespace = "com.ruiaureliano"
 
 @main class AppDelegate: NSObject, NSApplicationDelegate {
 
 	func applicationDidFinishLaunching(_ notification: Notification) {
+		/* TELEMETRY SDK */
+		let config = TelemetryDeck.Config(appID: kTelemetryAppId, namespace: kTelemetryAppNamespace)
+		TelemetryDeck.initialize(config: config)
 	}
 
 	func applicationWillTerminate(_ notification: Notification) {

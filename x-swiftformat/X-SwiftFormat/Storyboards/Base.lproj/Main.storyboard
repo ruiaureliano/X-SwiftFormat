@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -89,7 +89,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" alignment="center" id="qNE-Ga-27w">
                                     <font key="font" metaFont="systemLight" size="13"/>
-                                    <string key="title">Copyright © 2022 Olá Brothers LDA. 
+                                    <string key="title">Copyright © 2025 Olá Brothers LDA. 
 All rights reserved.</string>
                                     <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -108,15 +108,15 @@ All rights reserved.</string>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cA-zi-Rbb" userLabel="ANDRE TWITTER">
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cA-zi-Rbb" userLabel="ANDRE X">
                                         <rect key="frame" x="115" y="24" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="twitter-icon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="Gvb-v8-sW9">
+                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="x-icon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="Gvb-v8-sW9">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="andreTwitterPress:" target="mti-XV-rYq" id="oSZ-rS-xlx"/>
+                                            <action selector="andreXPress:" target="mti-XV-rYq" id="oSZ-rS-xlx"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-RQ-A6w" userLabel="ANDRE DRIBBLE">
@@ -139,15 +139,15 @@ All rights reserved.</string>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-io-9d5" userLabel="RUI TWITTER">
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-io-9d5" userLabel="RUI X">
                                         <rect key="frame" x="115" y="3" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="twitter-icon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="yb9-xt-UPa">
+                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="x-icon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="yb9-xt-UPa">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="ruiTwitterPress:" target="mti-XV-rYq" id="H8V-Tq-MTm"/>
+                                            <action selector="ruiXPress:" target="mti-XV-rYq" id="H8V-Tq-MTm"/>
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qCt-km-VO2" userLabel="RUI GITHUB">
@@ -167,11 +167,11 @@ All rights reserved.</string>
                     </view>
                     <connections>
                         <outlet property="andreDribble" destination="rCa-RQ-A6w" id="4GI-M4-Dcp"/>
-                        <outlet property="andreTwitter" destination="6cA-zi-Rbb" id="906-26-tAO"/>
+                        <outlet property="andreX" destination="6cA-zi-Rbb" id="906-26-tAO"/>
                         <outlet property="appName" destination="e2C-ZP-UzU" id="KGP-42-mLV"/>
                         <outlet property="appVersion" destination="ag7-aE-Bkt" id="pQ3-KF-259"/>
                         <outlet property="ruiGithub" destination="qCt-km-VO2" id="4LV-m7-eWo"/>
-                        <outlet property="ruiTwitter" destination="Szv-io-9d5" id="shi-Hs-Fdo"/>
+                        <outlet property="ruiX" destination="Szv-io-9d5" id="shi-Hs-Fdo"/>
                     </connections>
                 </viewController>
                 <customObject id="wod-hm-xVI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -597,11 +597,11 @@ All rights reserved.</string>
                                 <rect key="frame" x="17" y="56" width="110" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="8gA-d1-UKw">
-                                    <rect key="frame" x="4" y="5" width="102" height="76"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="84"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tya-oJ-2zq">
-                                            <rect key="frame" x="27" y="26" width="49" height="47"/>
+                                            <rect key="frame" x="31" y="34" width="49" height="47"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="☕️" id="sky-TZ-iyl">
                                                 <font key="font" metaFont="system" size="40"/>
@@ -610,7 +610,7 @@ All rights reserved.</string>
                                             </textFieldCell>
                                         </textField>
                                         <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiF-a0-xzj">
-                                            <rect key="frame" x="25" y="5" width="52" height="16"/>
+                                            <rect key="frame" x="29" y="13" width="52" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="$1" id="N8S-MG-91q">
                                                 <font key="font" metaFont="systemBlack" size="14"/>
@@ -619,7 +619,7 @@ All rights reserved.</string>
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KvF-qC-ozf" userLabel="COFFEE">
-                                            <rect key="frame" x="0.0" y="0.0" width="102" height="76"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="84"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" alignment="center" transparent="YES" imageScaling="proportionallyDown" inset="2" id="KzN-nw-81W">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -636,11 +636,11 @@ All rights reserved.</string>
                                 <rect key="frame" x="129" y="56" width="110" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="III-oa-sZ6">
-                                    <rect key="frame" x="4" y="5" width="102" height="76"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="84"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OYi-jU-si0">
-                                            <rect key="frame" x="27" y="26" width="49" height="47"/>
+                                            <rect key="frame" x="31" y="34" width="49" height="47"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="🍺" id="LFH-uc-Uio">
                                                 <font key="font" metaFont="system" size="40"/>
@@ -649,7 +649,7 @@ All rights reserved.</string>
                                             </textFieldCell>
                                         </textField>
                                         <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RaH-GQ-5Q8">
-                                            <rect key="frame" x="25" y="5" width="52" height="17"/>
+                                            <rect key="frame" x="29" y="13" width="52" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="$5" id="Obj-fh-4PJ">
                                                 <font key="font" metaFont="systemBlack" size="14"/>
@@ -658,7 +658,7 @@ All rights reserved.</string>
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AWK-oe-GYc" userLabel="BEER">
-                                            <rect key="frame" x="0.0" y="-2" width="104" height="78"/>
+                                            <rect key="frame" x="0.0" y="6" width="104" height="78"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" alignment="center" transparent="YES" imageScaling="proportionallyDown" inset="2" id="mOc-BR-tUT">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -675,11 +675,11 @@ All rights reserved.</string>
                                 <rect key="frame" x="241" y="56" width="110" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="ATe-RD-H48">
-                                    <rect key="frame" x="4" y="5" width="102" height="76"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="84"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvA-3v-WWL">
-                                            <rect key="frame" x="27" y="26" width="49" height="47"/>
+                                            <rect key="frame" x="31" y="34" width="49" height="47"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="🍝" id="219-jv-VbX">
                                                 <font key="font" metaFont="system" size="40"/>
@@ -688,7 +688,7 @@ All rights reserved.</string>
                                             </textFieldCell>
                                         </textField>
                                         <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3L-K7-dbg">
-                                            <rect key="frame" x="25" y="5" width="52" height="17"/>
+                                            <rect key="frame" x="29" y="13" width="52" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="$10" id="sbf-Qg-MDQ">
                                                 <font key="font" metaFont="systemBlack" size="14"/>
@@ -697,7 +697,7 @@ All rights reserved.</string>
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W7D-0A-8zu" userLabel="LUNCH">
-                                            <rect key="frame" x="0.0" y="-2" width="104" height="78"/>
+                                            <rect key="frame" x="0.0" y="6" width="104" height="78"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" alignment="center" transparent="YES" imageScaling="proportionallyDown" inset="2" id="aJW-h0-DxJ">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1325,7 +1325,7 @@ All rights reserved.</string>
                                         <rect key="frame" x="55" y="14" width="197" height="25"/>
                                         <popUpButtonCell key="cell" type="push" title="No Environment" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="ebe-ue-hhz" id="RjZ-rP-zgc">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="menu"/>
+                                            <font key="font" metaFont="message"/>
                                             <menu key="menu" id="cpd-8B-8dp">
                                                 <items>
                                                     <menuItem title="No Environment" state="on" id="ebe-ue-hhz"/>
@@ -1440,6 +1440,6 @@ All rights reserved.</string>
         <image name="default-help-bt" width="22" height="22"/>
         <image name="dribbble-icon" width="16" height="16"/>
         <image name="github-icon" width="16" height="16"/>
-        <image name="twitter-icon" width="16" height="16"/>
+        <image name="x-icon" width="16" height="16"/>
     </resources>
 </document>

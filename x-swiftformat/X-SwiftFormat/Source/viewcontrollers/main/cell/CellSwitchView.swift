@@ -20,7 +20,7 @@ class CellSwitchView: NSView {
 		self.isRule = isRule
 		self.sharedConfiguration = sharedConfiguration
 
-		self.labelCheck.title = SharedConfiguration.label(for: key)
+		self.labelCheck.title = sharedConfiguration.label(for: key)
 
 		if on {
 			labelCheck.state = .on

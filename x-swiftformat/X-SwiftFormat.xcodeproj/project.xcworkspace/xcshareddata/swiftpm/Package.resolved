@@ -1,13 +1,22 @@
 {
-  "originHash" : "e22a7199eca8b1a66553ed21d546abc7ea25fd5f431845488b5b11991189eb92",
+  "originHash" : "61d2169913c068251ef53b5f5f7836e756fde4c09550e5829dbbbe5a8bef52e6",
   "pins" : [
     {
       "identity" : "swift-argument-parser",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
       "state" : {
-        "revision" : "8f4d2753f0e4778c76d5f05ad16c74f707390531",
-        "version" : "1.2.3"
+        "revision" : "309a47b2b1d9b5e991f36961c983ecec72275be3",
+        "version" : "1.6.1"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-cmark.git",
+      "state" : {
+        "revision" : "b022b08312decdc46585e0b3440d97f6f22ef703",
+        "version" : "0.6.0"
       }
     },
     {
@@ -15,17 +24,35 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-format",
       "state" : {
-        "branch" : "release/5.9",
-        "revision" : "1323e87eced56bdcfed1bb78af1f16f39274d032"
+        "branch" : "release/6.2",
+        "revision" : "d038d54cc5facbd5ec171fc23ac43c31ce6f141f"
+      }
+    },
+    {
+      "identity" : "swift-markdown",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-markdown.git",
+      "state" : {
+        "revision" : "ea79e83c8744d2b50b0dc2d5bbd1e857e1253bf9",
+        "version" : "0.6.0"
       }
     },
     {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-syntax.git",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
       "state" : {
-        "branch" : "release/5.9",
-        "revision" : "d3fe9e79ae9a60718c1e9b003b39cf66affd7c29"
+        "branch" : "release/6.2",
+        "revision" : "a0db7568660384d9713165081a5aa22b84182438"
+      }
+    },
+    {
+      "identity" : "swiftsdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TelemetryDeck/SwiftSDK",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a7fd1eb469589a3c8fd8cc3abe19b092b5d674dc"
       }
     }
   ],

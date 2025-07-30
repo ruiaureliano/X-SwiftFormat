@@ -1,6 +1,6 @@
 # ⚖️ MIT License
 
-[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](https://opensource.org/licenses/MIT) [![](https://img.shields.io/badge/swift-6.0-0f73b4.svg)](https://swift.org/blog/swift-6.0-released/) [![](https://img.shields.io/badge/docs-2.0.1-0f73b4.svg)](./DOCS.md)
+[![](https://img.shields.io/badge/MIT-License-0f73b4.svg)](https://opensource.org/licenses/MIT) [![](https://img.shields.io/badge/swift-6.2-0f73b4.svg)](https://swift.org/blog/swift-6.2-released/) [![](https://img.shields.io/badge/docs-2.1-0f73b4.svg)](./DOCS.md)
 
 ![](./assets/readme/xsf-header.png)
 

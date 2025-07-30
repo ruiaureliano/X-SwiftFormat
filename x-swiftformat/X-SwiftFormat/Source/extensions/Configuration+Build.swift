@@ -1,5 +1,5 @@
 import Cocoa
-import SwiftFormatConfiguration
+import SwiftFormat
 
 extension Configuration {
 

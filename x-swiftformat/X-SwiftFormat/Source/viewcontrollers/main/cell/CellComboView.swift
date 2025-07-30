@@ -20,7 +20,7 @@ class CellComboView: NSView {
 		self.labels = labels
 		self.value = value
 		self.sharedConfiguration = sharedConfiguration
-		self.labelCheck.title = SharedConfiguration.label(for: key)
+		self.labelCheck.title = sharedConfiguration.label(for: key)
 
 		popupField.removeAllItems()
 		popupField.addItems(withTitles: labels.map { $0.lowercased() })

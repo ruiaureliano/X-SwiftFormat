@@ -5,9 +5,9 @@ class AboutViewController: NSViewController {
 	@IBOutlet weak var appName: NSTextField!
 	@IBOutlet weak var appVersion: NSTextField!
 
-	@IBOutlet weak var andreTwitter: NSButton!
+	@IBOutlet weak var andreX: NSButton!
 	@IBOutlet weak var andreDribble: NSButton!
-	@IBOutlet weak var ruiTwitter: NSButton!
+	@IBOutlet weak var ruiX: NSButton!
 	@IBOutlet weak var ruiGithub: NSButton!
 
 	private var effectiveAppearanceObservation: NSKeyValueObservation?
@@ -24,9 +24,9 @@ class AboutViewController: NSViewController {
 		}
 
 		effectiveAppearanceObservation = self.view.observe(\.effectiveAppearance, options: [.old, .new]) { _, _ in
-			self.andreTwitter.tintImage(with: .selectedContentBackgroundColor)
+			self.andreX.tintImage(with: .selectedContentBackgroundColor)
 			self.andreDribble.tintImage(with: .selectedContentBackgroundColor)
-			self.ruiTwitter.tintImage(with: .selectedContentBackgroundColor)
+			self.ruiX.tintImage(with: .selectedContentBackgroundColor)
 			self.ruiGithub.tintImage(with: .selectedContentBackgroundColor)
 		}
 	}

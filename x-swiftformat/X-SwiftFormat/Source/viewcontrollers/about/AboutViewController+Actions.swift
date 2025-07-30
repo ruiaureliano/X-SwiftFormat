@@ -2,8 +2,8 @@ import Cocoa
 
 extension AboutViewController {
 
-	@IBAction func andreTwitterPress(_ button: NSButton) {
-		if let url = URL(string: "https://twitter.com/andre_goncalves") {
+	@IBAction func andreXPress(_ button: NSButton) {
+		if let url = URL(string: "https://x.com/andre_goncalves") {
 			NSWorkspace.shared.open(url)
 		}
 	}
@@ -14,8 +14,8 @@ extension AboutViewController {
 		}
 	}
 
-	@IBAction func ruiTwitterPress(_ button: NSButton) {
-		if let url = URL(string: "https://twitter.com/ruiaureliano") {
+	@IBAction func ruiXPress(_ button: NSButton) {
+		if let url = URL(string: "https://x.com/ruiaureliano") {
 			NSWorkspace.shared.open(url)
 		}
 	}

@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "twitter-icon.png",
+      "filename" : "x-icon.png",
       "idiom" : "mac",
       "scale" : "1x"
     },
@@ -12,12 +12,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "twitter-icon-dark.png",
+      "filename" : "x-icon-dark.png",
       "idiom" : "mac",
       "scale" : "1x"
     },
     {
-      "filename" : "twitter-icon@2x.png",
+      "filename" : "x-icon@2x.png",
       "idiom" : "mac",
       "scale" : "2x"
     },
@@ -28,7 +28,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "twitter-icon-dark@2x.png",
+      "filename" : "x-icon-dark@2x.png",
       "idiom" : "mac",
       "scale" : "2x"
     }
